@@ -27,3 +27,10 @@
 *.exe
 *.out
 *.app
+
+# Backups
+*.user
+*.swp
+
+#Folders
+build/
