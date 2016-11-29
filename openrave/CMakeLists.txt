@@ -8,7 +8,7 @@ find_package(YARP REQUIRED)
 
 list(APPEND CMAKE_MODULE_PATH ${YARP_MODULE_PATH})
 include(YarpInstallationHelpers)
-#yarp_configure_external_installation(teo)
+yarp_configure_external_installation(teo-openrave-models)
 
 #yarp_install(FILES ymanager.ini DESTINATION ${TEO_OPENRAVE_MODELS_DATA_INSTALL_DIR})  # Cleaner than ${TEO_OPENRAVE_MODELS_ROBOTS_INSTALL_DIR}/../ or similar.
 
