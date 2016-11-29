@@ -10,11 +10,11 @@ list(APPEND CMAKE_MODULE_PATH ${YARP_MODULE_PATH})
 include(YarpInstallationHelpers)
 #yarp_configure_external_installation(teo)
 
-#yarp_install(FILES ymanager.ini DESTINATION ${TEO_DATA_INSTALL_DIR})  # Cleaner than ${TEO_ROBOTS_INSTALL_DIR}/../ or similar.
+#yarp_install(FILES ymanager.ini DESTINATION ${TEO_OPENRAVE_MODELS_DATA_INSTALL_DIR})  # Cleaner than ${TEO_OPENRAVE_MODELS_ROBOTS_INSTALL_DIR}/../ or similar.
 
 file(GLOB teo ${CMAKE_CURRENT_SOURCE_DIR}/teo/*.xml)
 file(GLOB teo/models ${CMAKE_CURRENT_SOURCE_DIR}/teo/models/*.wrl)
 
-yarp_install(FILES ${teo} DESTINATION ${TEO_CONTEXTS_INSTALL_DIR}/${appname}/teo)
-yarp_install(FILES ${teo/models} DESTINATION ${TEO_CONTEXTS_INSTALL_DIR}/${appname}/teo/models)
+yarp_install(FILES ${teo} DESTINATION ${TEO_OPENRAVE_MODELS_CONTEXTS_INSTALL_DIR}/${appname}/teo)
+yarp_install(FILES ${teo/models} DESTINATION ${TEO_OPENRAVE_MODELS_CONTEXTS_INSTALL_DIR}/${appname}/teo/models)
 
