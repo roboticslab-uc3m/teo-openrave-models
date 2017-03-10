@@ -9,7 +9,7 @@ Additionally, this project depends on YCM to download and build external package
 - [teo-openrave-models](https://github.com/roboticslab-uc3m/teo-openrave-models)
 - [vision](https://github.com/roboticslab-uc3m/vision)
 
-### Install the Simulation and Basic Control Software
+### Install the Models
 
 Our software integrates the previous dependencies. Note that you will be prompted for your password upon using '''sudo''' a couple of times:
 
@@ -29,13 +29,3 @@ export TEO_OPENRAVE_MODELS_DIR=/path/to/teo-openrave-models/build
 
 For additional `teo-openrave-models` options use ccmake instead of cmake.
 
-### Even more!
-
-Done! You are now probably interested in one of the following links:
-
-Optional dependencies:
-- [Install KDL](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_kdl.md)
-- [Install CWiiD](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_cwiid.md)
-- [Install GLib](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_glib.md)
-- [Install OpenCV](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_opencv.md)
-- [Install Travis](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_travis.md)
