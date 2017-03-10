@@ -1,4 +1,4 @@
-## teo-main: Installation from Source Code
+## teo-openrave-models: Installation from Source Code
 
 First install the dependencies:
 - [Install CMake](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_cmake.md)
@@ -16,18 +16,18 @@ Our software integrates the previous dependencies. Note that you will be prompte
 ```bash
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it does not exist; then, enter it
-git clone https://github.com/roboticslab-uc3m/teo-main.git  # download teo-main software from the repository
-cd teo-main; mkdir build; cd build
+git clone https://github.com/roboticslab-uc3m/teo-openrave-models.git  # download teo-openrave-models software from the repository
+cd teo-openrave-models; mkdir build; cd build
 cmake ..
 make -j3; sudo make install; cd  # go home
 ```
 
-For CMake find_package(TEO_MAIN REQUIRED), you may also be interested in adding the following to your bashrc or profile:
+For CMake find_package(TEO_OPENRAVE_MODELS REQUIRED), you may also be interested in adding the following to your bashrc or profile:
 ```bash
-export TEO_MAIN_DIR=/path/to/teo-main/build
+export TEO_OPENRAVE_MODELS_DIR=/path/to/teo-openrave-models/build
 ```
 
-For additional `teo-main` options use ccmake instead of cmake.
+For additional `teo-openrave-models` options use ccmake instead of cmake.
 
 ### Even more!
 
