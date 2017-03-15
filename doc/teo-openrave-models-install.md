@@ -1,11 +1,11 @@
 ## teo-openrave-models: Installation from Source Code
 
 First install the dependencies:
-- [Install CMake](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_cmake.md)
-- [Install YARP](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_yarp.md)
-- [Install OpenRAVE](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_openrave.md)
+- [Install CMake](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install-cmake.md)
+- [Install YARP](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install-yarp.md)
+- [Install OpenRAVE](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install-openrave.md)
 
-Additionally, this project depends on YCM to download and build external packages. Although this process is intended to run automatically during the CMake configuration phase, you may still want to install YCM and said packages by yourself. In that respect, refer to [Install YCM](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_ycm.md).
+Additionally, this project depends on YCM to download and build external packages. Although this process is intended to run automatically during the CMake configuration phase, you may still want to install YCM and said packages by yourself. In that respect, refer to [Install YCM](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install-ycm.md).
 
 ### Install the Models
 
