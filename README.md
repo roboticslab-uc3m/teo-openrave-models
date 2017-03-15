@@ -1,6 +1,6 @@
 [![teo-openrave-models Homepage](https://img.shields.io/badge/teo-openrave-models-orange.svg)](http://robots.uc3m.es/dox-teo-openrave-models) [![Latest Release](https://img.shields.io/github/tag/roboticslab-uc3m/teo-openrave-models.svg?label=Latest Release)](https://github.com/roboticslab-uc3m/teo-openrave-models/tags)
 
-Main ASIBOT assistive robot source code intended for use on any PC.
+TEO OpenRAVE models.
 
 Link to Doxygen generated documentation: http://robots.uc3m.es/dox-teo-openrave-models
 
