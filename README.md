@@ -2,8 +2,6 @@
 
 TEO OpenRAVE models.
 
-Link to Doxygen generated documentation: http://robots.uc3m.es/dox-teo-openrave-models
-
 ## Installation
 
 Installation instructions for installing from source can be found [here](doc/teo-openrave-models-install.md).
