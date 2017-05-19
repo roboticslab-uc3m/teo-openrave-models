@@ -17,7 +17,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q20" type="hinge">
+            <Joint circular="false" name="q20" type="hinge">
             <Body>r31</Body>
             <Body>r20</Body>
             <offsetfrom>r20</offsetfrom>
@@ -41,7 +41,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q21" type="hinge">
+            <Joint circular="false" name="q21" type="hinge">
             <Body>r20</Body>
             <Body>r21</Body>
             <offsetfrom>r21</offsetfrom>
@@ -65,7 +65,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q22" type="hinge">
+            <Joint circular="false" name="q22" type="hinge">
             <Body>r21</Body>
             <Body>r22</Body>
             <offsetfrom>r22</offsetfrom>
@@ -89,7 +89,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q23" type="hinge">
+            <Joint circular="false" name="q23" type="hinge">
             <Body>r22</Body>
             <Body>r23</Body>
             <offsetfrom>r23</offsetfrom>
@@ -113,7 +113,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q24" type="hinge">
+            <Joint circular="false" name="q24" type="hinge">
             <Body>r23</Body>
             <Body>r24</Body>
             <offsetfrom>r24</offsetfrom>
@@ -137,7 +137,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q25" type="hinge">
+            <Joint circular="false" name="q25" type="hinge">
             <Body>r24</Body>
             <Body>r25</Body>
             <offsetfrom>r25</offsetfrom>
