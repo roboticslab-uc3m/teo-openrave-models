@@ -155,6 +155,18 @@
         <resolution>1</resolution>
         </Joint>
 
+        <Body name="r5Man" type="dynamic">
+        <offsetfrom>r55</offsetfrom>
+        <Translation>0 0 -0.123</Translation>
+        </Body>
+
+        <Joint name="q5Man" type="hinge" enable="False">
+        <Body>r55</Body>
+        <Body>r5Man</Body>
+        <limitsdeg>0 0</limitsdeg>
+        </Joint>
+
+
 
 </KinBody>
 
