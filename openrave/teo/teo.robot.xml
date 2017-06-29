@@ -56,25 +56,25 @@
   </Manipulator>
 
   <Manipulator name="rightArm">
-    <effector>r15</effector>   <!-- last link where end effector is attached-->
+    <effector>r1Man</effector>   <!-- last link where end effector is attached-->
     <base>r31</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
     <!-- <iksolver>MyTriDOFSolver</iksolver> -->
 
-    <Translation>0 0 -0.2</Translation>-->
+    <Translation>0 0 0</Translation>-->
   </Manipulator>
 
   <Manipulator name="leftArm">
-    <effector>r25</effector>   <!-- last link where end effector is attached-->
+    <effector>r2Man</effector>   <!-- last link where end effector is attached-->
     <base>r31</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
     <!-- <iksolver>MyTriDOFSolver</iksolver> -->
 
-    <Translation>0 0 -0.2</Translation>
+    <Translation>0 0 0</Translation>
   </Manipulator>
 
 

@@ -41,7 +41,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q21" type="hinge">
+            <Joint circular="false" name="q21" type="hinge">
             <Body>r20</Body>
             <Body>r21</Body>
             <offsetfrom>r21</offsetfrom>
@@ -65,7 +65,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q22" type="hinge">
+            <Joint circular="false" name="q22" type="hinge">
             <Body>r21</Body>
             <Body>r22</Body>
             <offsetfrom>r22</offsetfrom>
@@ -89,7 +89,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q23" type="hinge">
+            <Joint circular="false" name="q23" type="hinge">
             <Body>r22</Body>
             <Body>r23</Body>
             <offsetfrom>r23</offsetfrom>
@@ -113,7 +113,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q24" type="hinge">
+            <Joint circular="false" name="q24" type="hinge">
             <Body>r23</Body>
             <Body>r24</Body>
             <offsetfrom>r24</offsetfrom>
@@ -137,7 +137,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q25" type="hinge">
+            <Joint circular="false" name="q25" type="hinge">
             <Body>r24</Body>
             <Body>r25</Body>
             <offsetfrom>r25</offsetfrom>
@@ -146,6 +146,17 @@
             <axis>0 1 0</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>
+            </Joint>
+
+            <Body name="r2Man" type="dynamic">
+            <offsetfrom>r25</offsetfrom>
+            <Translation>0 0 -0.2</Translation>
+            </Body>
+
+            <Joint name="q2Man" type="hinge" enable="False">
+            <Body>r25</Body>
+            <Body>r2Man</Body>
+            <limitsdeg>0 0</limitsdeg>
             </Joint>
 
           </KinBody>
