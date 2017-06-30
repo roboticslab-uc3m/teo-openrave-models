@@ -56,73 +56,72 @@
   </Manipulator>
 
   <Manipulator name="rightArm">
-    <effector>r15</effector>   <!-- last link where end effector is attached-->
+    <effector>r1Man</effector>   <!-- last link where end effector is attached-->
     <base>r31</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
     <!-- <iksolver>MyTriDOFSolver</iksolver> -->
 
-    <Translation>0 0 -0.2</Translation>-->
+    <Translation>0 0 0</Translation>-->
   </Manipulator>
 
   <Manipulator name="rigthArm_trunk">
-    <effector>r15</effector>   <!-- last link where end effector is attached-->
+    <effector>r1Man</effector>   <!-- last link where end effector is attached-->
     <base>cintura</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
     <!-- <iksolver>MyTriDOFSolver</iksolver> -->
 
-    <Translation>0 0 -0.2</Translation>-->
+    <Translation>0 0 0</Translation>-->
   </Manipulator>
 
   <Manipulator name="leftArm">
-    <effector>r25</effector>   <!-- last link where end effector is attached-->
+    <effector>r2Man</effector>   <!-- last link where end effector is attached-->
     <base>r31</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
     <!-- <iksolver>MyTriDOFSolver</iksolver> -->
 
-    <Translation>0 0 -0.2</Translation>
+    <Translation>0 0 0</Translation>
   </Manipulator>
 
   <Manipulator name="lefArm_trunk">
-    <effector>r25</effector>   <!-- last link where end effector is attached-->
+    <effector>r2Man</effector>   <!-- last link where end effector is attached-->
     <base>cintura</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
     <!-- <iksolver>MyTriDOFSolver</iksolver> -->
 
-    <Translation>0 0 -0.2</Translation>-->
+    <Translation>0 0 0</Translation>-->
   </Manipulator>
 
-   <!--TODO: correct feet effector translation (-0.175)-->
-    <Manipulator name="rightLeg">
-    <effector>r55</effector>   <!-- last link where end effector is attached-->
+
+   <Manipulator name="rightLeg">
+    <effector>r5Man</effector>   <!-- last link where end effector is attached-->
     <base>cintura</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
-     <iksolver>ik/ikfast0x10000048.Transform6D.x86_64.16_17_18_19_20_21.so</iksolver>
+     <!--<iksolver>ik/ikfast0x10000048.Transform6D.x86_64.16_17_18_19_20_21.so</iksolver>-->
 
-    <Translation>0 0 -0.125</Translation>
-    </Manipulator>
+    <Translation>0 0 0</Translation>
+   </Manipulator>
 
 
   <Manipulator name="leftLeg">
-    <effector>r65</effector>   <!-- last link where end effector is attached-->
+    <effector>r6Man</effector>   <!-- last link where end effector is attached-->
     <base>cintura</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
-    <iksolver>ik/ikfast0x10000048.Transform6D.x86_64.22_23_24_25_26_27.so</iksolver>
+    <!--<iksolver>ik/ikfast0x10000048.Transform6D.x86_64.22_23_24_25_26_27.so</iksolver>-->
 
-    <Translation>0 0 -0.125</Translation>
+    <Translation>0 0 0</Translation>
   </Manipulator>
 
 
 </Robot>
-

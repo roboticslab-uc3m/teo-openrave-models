@@ -148,6 +148,17 @@
             <resolution>1</resolution>
             </Joint>
 
+            <Body name="r2Man" type="dynamic">
+            <offsetfrom>r25</offsetfrom>
+            <Translation>0 0 -0.2</Translation>
+            </Body>
+
+            <Joint name="q2Man" type="hinge" enable="False">
+            <Body>r25</Body>
+            <Body>r2Man</Body>
+            <limitsdeg>0 0</limitsdeg>
+            </Joint>
+
           </KinBody>
 
 
