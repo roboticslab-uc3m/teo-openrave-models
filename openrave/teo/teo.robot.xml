@@ -66,7 +66,7 @@
     <Translation>0 0 0</Translation>-->
   </Manipulator>
 
-  <Manipulator name="rigthArm_trunk">
+  <Manipulator name="rightArm_trunk">
     <effector>r1Man</effector>   <!-- last link where end effector is attached-->
     <base>cintura</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
