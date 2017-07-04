@@ -17,7 +17,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q20" type="hinge">
+            <Joint circular="false" name="q20" type="hinge">
             <Body>r31</Body>
             <Body>r20</Body>
             <offsetfrom>r20</offsetfrom>
