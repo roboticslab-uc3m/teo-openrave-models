@@ -1,0 +1,37 @@
+<KinBody name="Teohand">
+
+  <Body name="handbase" type="dynamic">
+    <Geom type="trimesh" modifiable="true">
+      <Translation>0.0  0.0  0.0</Translation>
+      <data>models/right-hand/union_muneca_mano.wrl 1</data>
+      <Render>models/right-hand/union_muneca_mano.wrl 1</Render>
+    </Geom>
+  </Body>
+
+  <Body name="ft" type="dynamic">
+    <Geom type="trimesh" modifiable="true">
+      <!-- translation: 0.0, 0.022, -0.06 for FT detailed sensor -->
+      <Translation>0.0  0.0  0.06</Translation> 
+      <data>models/right-hand/ft_mano_simple.wrl 0.001</data>
+      <Render>models/right-hand/ft_mano_simple.wrl 0.001</Render>
+    </Geom>
+  </Body>
+
+  <Body name="brida" type="dynamic">
+    <Geom type="trimesh" modifiable="true">
+      <Translation>0.0  0.0  0.0</Translation>
+      <data>models/right-hand/brida_mano.wrl 0.001</data>
+      <Render>models/right-hand/brida_mano.wrl 0.001</Render>
+    </Geom>
+  </Body>
+
+  <Body name="palma" type="dynamic">
+    <Geom type="trimesh" modifiable="true">
+      <Translation>0.0  0.0  0.0</Translation>
+      <RotationAxis>1 0 0 90</RotationAxis>
+      <data>models/right-hand/palma.wrl 0.001</data>
+      <Render>models/right-hand/palma.wrl 0.001</Render>
+    </Geom>
+  </Body>
+
+</KinBody>
