@@ -1,0 +1,11 @@
+#VRML V1.0 ascii
+WWWInline {
+name "Falange_Distal.wrl"
+bboxSize 0.000000 0.000000 0.000000
+bboxCenter 0.000000 0.000000 0.000000
+}
+WWWInline {
+name "Falange_Proximal.wrl"
+bboxSize 0.000000 0.000000 0.000000
+bboxCenter 0.000000 0.000000 0.000000
+}
