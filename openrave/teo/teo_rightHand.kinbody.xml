@@ -1,10 +1,10 @@
-<KinBody name="rightHand">
+<KinBody name="Teohand">
 
-  <Body name="rightHand" type="dynamic">
+  <Body name="ManoDerecha" type="dynamic">
     <Geom type="trimesh" modifiable="true">
       <Translation>0.0  0.0  0.0</Translation>
-      <data>models/right-hand/mano_derecha_def_1 1</data>
-      <Render>models/right-hand/mano_derecha_def_1 1</Render>
+      <data>models/right-hand/manoDerechaSinDedos.wrl 1</data>
+      <Render>models/right-hand/manoDerechaSinDedos.wrl 1</Render>
     </Geom>
   </Body>
 <!--

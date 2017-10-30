@@ -1,7 +1,7 @@
 
 <!-- head -->
 
-        <KinBody name="head" makejoinedlinksadjacent="1">
+        <KinBody name="head" > <!-- makejoinedlinksadjacent="1" -->
 
 
 	    <Body name="r00" type="dynamic">

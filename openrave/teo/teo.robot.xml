@@ -32,6 +32,9 @@
     <!-- leftLeg -->
     <KinBody name="leftLeg" file="teo_leftLeg.kinbody.xml" />
 
+    <!-- rightHand -->
+    <!-- <KinBody name="rightHand" file="teo_rightHand.kinbody.xml" /> -->
+
     <!-- Manipulators -->
   <Manipulator name="trunk">
     <effector>r31</effector>   <!-- last link where end effector is attached-->
@@ -100,6 +103,12 @@
 
     <Translation>0 0 0</Translation>
   </Manipulator>
-
+<!--
+  <Manipulator name="rightHand">
+    <effector>r7Man</effector>   
+    <base>r31</base>           
+    <Translation>0 0 0</Translation>
+  </Manipulator>
+-->
 
 </Robot>
