@@ -23,6 +23,9 @@
     <!-- rightArm -->
     <KinBody name="rightArm" file="teo_rightArm.kinbody.xml" />
 
+    <!-- rightHand -->
+    <KinBody name="rightHand" file="teo_hand.kinbody.xml" />
+
     <!-- leftArm -->
     <KinBody name="leftArm" file="teo_leftArm.kinbody.xml" />
 
@@ -31,9 +34,6 @@
 
     <!-- leftLeg -->
     <KinBody name="leftLeg" file="teo_leftLeg.kinbody.xml" />
-
-    <!-- rightHand -->
-    <!-- <KinBody name="rightHand" file="teo_rightHand.kinbody.xml" /> -->
 
     <!-- Manipulators -->
   <Manipulator name="trunk">
@@ -59,8 +59,19 @@
   </Manipulator>
 
   <Manipulator name="rightArm">
-    <effector>r1Man</effector>   <!-- last link where end effector is attached-->
+    <effector>r14</effector>   <!-- last link where end effector is attached-->
     <base>r31</base>           <!-- base link-->
+    <!-- the id of the inverse kinematics solver, it is not necessary to-->
+    <!-- specify an ik solver for every robot. But if there is one,-->
+    <!-- use iksolver field to identity it.-->
+    <!-- <iksolver>MyTriDOFSolver</iksolver> -->
+
+    <Translation>0 0 0</Translation>-->
+  </Manipulator>
+
+  <Manipulator name="rightHand">
+    <effector>r1Man</effector>   <!-- last link where end effector is attached-->
+    <base>r14</base>           <!-- base link: (r31)-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
