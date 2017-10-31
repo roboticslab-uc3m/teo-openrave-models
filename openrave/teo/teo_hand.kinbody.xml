@@ -1,38 +1,198 @@
 <KinBody name="rightHand">
 
-  <Body name="rightHand" type="dynamic">
-    <Geom type="trimesh" modifiable="true">
-      <Translation>0.0  0.0  0.0</Translation>
-      <data>models/right-hand/mano_derecha_def_1 1</data>
-      <Render>models/right-hand/mano_derecha_def_1 1</Render>
-    </Geom>
-  </Body>
-<!--
-  <Body name="ft" type="dynamic">
-    <Geom type="trimesh" modifiable="true">      
-      <Translation>0.0  0.0  0.0</Translation> 
-      <data>models/right-hand/ft_mano.wrl 1</data>
-      <Render>models/right-hand/ft_mano.wrl 1</Render>
-    </Geom>
-  </Body>
+	<!-- mano derecha (base) 
+	<Body name="handbase" type="dynamic">
+        </Body>
+  	-->
 
-  <Body name="brida" type="dynamic">
-    <Geom type="trimesh" modifiable="true">
-      <Translation>0.0  0.0  0.0</Translation>
-      <data>models/right-hand/brida_mano.wrl 1</data>
-      <Render>models/right-hand/brida_mano.wrl 1</Render>
-    </Geom>
-  </Body>
+	<!-- mano derecha (palma) -->
+	    <Body name="RightFrontalWrist" type="dynamic">
+            <!-- <offsetfrom>handbase</offsetfrom> -->
+             <offsetfrom>r14</offsetfrom>
+             <Translation>0 0 0</Translation>
+             <Geom type="trimesh">
+              <Render>models/right-hand/mano_derecha_def_rotada.wrl 0.001</Render> 
+              <collision>models/right-hand/mano_derecha_def_rotada.wrl 0.001</collision>
+             </Geom>
+             <Mass type="custom">
+              <density>1</density>
+             </Mass>
+            </Body>
 
-  <Body name="palma" type="dynamic">
-    <Geom type="trimesh" modifiable="true">
-      <Translation>0.0  0.0  0.0</Translation>
-      <RotationAxis>1 0 0 90</RotationAxis>
-      <data>models/right-hand/palma.wrl 1</data>
-      <Render>models/right-hand/palma.wrl 1</Render>
-    </Geom>
-  </Body>
--->
+	    <Joint circular="false" name="RightFrontalWristJoint" type="hinge"> 
+            	<Body>r14</Body>
+            	<Body>RightFrontalWrist</Body>
+             	<offsetfrom>RightFrontalWrist</offsetfrom>
+             	<weight>1.0</weight>
+             	<limitsdeg>-10 100</limitsdeg>
+             	<axis>0 -1 0</axis>
+             	<maxvel>3</maxvel>
+             	<resolution>1</resolution>
+            </Joint>
+
+	<!-- Dedo pulgar: falange proximal (00) -->
+
+	    <Body name="RightThumbProximal" type="dynamic">
+            <offsetfrom>RightFrontalWrist</offsetfrom>
+            <Translation>0.027472302 0 -0.164588951</Translation>            
+            <Geom type="trimesh">
+            <Render>models/right-hand/falange_proximal_def_rotada.wrl 0.001</Render>
+            <collision>models/right-hand/falange_proximal_def_rotada.wrl 0.001</collision>
+            </Geom>
+            <Mass type="custom">
+              <density>1</density>
+            </Mass>
+            </Body>
+
+	    <Joint circular="false" name="RightThumbProximalJoint" type="hinge">
+            <Body>RightFrontalWrist</Body>
+            <Body>RightThumbProximal</Body>
+            <offsetfrom>RightThumbProximal</offsetfrom>
+            <weight>1.0</weight>
+            <limitsdeg>-30 10</limitsdeg>
+            <axis>0 -1 0</axis>
+            <maxvel>3</maxvel>
+            <resolution>1</resolution>
+            </Joint>
+
+	<!-- Dedo pulgar (thumb): falange distal (00) -->
+
+	    <Body name="RightThumbDistal" type="dynamic">
+            <offsetfrom>RightThumbProximal</offsetfrom>
+            <Translation>0.027 0 -0.047</Translation>	                
+            <Geom type="trimesh">
+            <Render>models/right-hand/falange_distal_def_rotada.wrl 0.001</Render>
+            <collision>models/right-hand/falange_distal_def_rotada.wrl 0.001</collision>
+            </Geom>
+            <Mass type="custom">
+              <density>1</density>
+            </Mass>
+            </Body>
+
+	    <Joint circular="false" name="RightThumbDistalJoint" type="hinge">
+            <Body>RightThumbProximal</Body>
+            <Body>RightThumbDistal</Body>
+            <offsetfrom>RightThumbDistal</offsetfrom>
+            <weight>1.0</weight>
+            <limitsdeg>-50 10</limitsdeg>
+            <axis>0 -1 0</axis>
+            <maxvel>3</maxvel>
+            <resolution>1</resolution>
+            </Joint>
+
+	<!-- Dedo indice: falange proximal (01) -->
+
+	    <Body name="RightExternalFingerProximal" type="dynamic">
+            <offsetfrom>RightFrontalWrist</offsetfrom>
+            <Translation>-0.02852741 -0.02010339 -0.164409358</Translation>
+            <RotationAxis>0 0 1 180</RotationAxis>            
+            <Geom type="trimesh">
+            <Render>models/right-hand/falange_proximal_def_rotada.wrl 0.001</Render>
+            <collision>models/right-hand/falange_proximal_def_rotada.wrl 0.001</collision>
+            </Geom>
+            <Mass type="custom">
+              <density>1</density>
+            </Mass>
+            </Body>
+
+	    <Joint circular="false" name="RightExternalFingerProximalJoint" type="hinge">
+            <Body>RightFrontalWrist</Body>
+            <Body>RightExternalFingerProximal</Body>
+            <offsetfrom>RightExternalFingerProximal</offsetfrom>
+            <weight>1.0</weight>
+            <limitsdeg>-30 10</limitsdeg>
+            <axis>0 -1 0</axis>
+            <maxvel>3</maxvel>
+            <resolution>1</resolution>
+            </Joint>
+
+	<!-- Dedo indice: falange distal (01) -->
+
+	    <Body name="RightExternalFingerDistal" type="dynamic">
+            <offsetfrom>RightExternalFingerProximal</offsetfrom>
+            <Translation>0.027 0.0 -0.047</Translation>
+            <Geom type="trimesh">
+            <Render>models/right-hand/falange_distal_def_rotada.wrl 0.001</Render>
+            <collision>models/right-hand/falange_distal_def_rotada.wrl 0.001</collision>
+            </Geom>
+            <Mass type="custom">
+              <density>1</density>
+            </Mass>
+            </Body>
+
+	    <Joint circular="false" name="RightExternalFingerDistalJoint" type="hinge">
+            <Body>RightExternalFingerProximal</Body>
+            <Body>RightExternalFingerDistal</Body>
+            <offsetfrom>RightExternalFingerDistal</offsetfrom>
+            <weight>1.0</weight>
+            <limitsdeg>-50 10</limitsdeg>
+            <axis>0 -1 0</axis>
+            <maxvel>3</maxvel>
+            <resolution>1</resolution>
+            </Joint>
+
+	<!-- Dedo medio: falange proximal (02) -->
+
+	    <Body name="RightInternalFingerProximal" type="dynamic">
+            <offsetfrom>RightFrontalWrist</offsetfrom>
+            <Translation>-0.02852741 0.02010339 -0.164409358</Translation>
+            <RotationAxis>0 0 1 180</RotationAxis>            
+            <Geom type="trimesh">
+            <Render>models/right-hand/falange_proximal_def_rotada.wrl 0.001</Render>
+            <collision>models/right-hand/falange_proximal_def_rotada.wrl 0.001</collision>
+            </Geom>
+            <Mass type="custom">
+              <density>1</density>
+            </Mass>
+            </Body>
+
+	    <Joint circular="false" name="RightInternalFingerProximalJoint" type="hinge">
+            <Body>RightFrontalWrist</Body>
+            <Body>RightInternalFingerProximal</Body>
+            <offsetfrom>RightInternalFingerProximal</offsetfrom>
+            <weight>1.0</weight>
+            <limitsdeg>-30 10</limitsdeg>
+            <axis>0 -1 0</axis>
+            <maxvel>3</maxvel>
+            <resolution>1</resolution>
+            </Joint>
+
+	<!-- Dedo medio: falange distal (02) -->
+
+	    <Body name="RightInternalFingerDistal" type="dynamic">
+            <offsetfrom>RightInternalFingerProximal</offsetfrom>
+            <Translation>0.027 0.0 -0.047</Translation>           
+            <Geom type="trimesh">
+            <Render>models/right-hand/falange_distal_def_rotada.wrl 0.001</Render>
+            <collision>models/right-hand/falange_distal_def_rotada.wrl 0.001</collision>
+            </Geom>
+            <Mass type="custom">
+              <density>1</density>
+            </Mass>
+            </Body>
+
+	    <Joint circular="false" name="RightInternalFingerDistalJoint" type="hinge">
+            <Body>RightInternalFingerProximal</Body>
+            <Body>RightInternalFingerDistal</Body>
+            <offsetfrom>RightInternalFingerDistal</offsetfrom>
+            <weight>1.0</weight>
+            <limitsdeg>-50 10</limitsdeg>
+            <axis>0 -1 0</axis>
+            <maxvel>3</maxvel>
+            <resolution>1</resolution>
+            </Joint>
+
+	<!-- TCP (effector) -->
+	    <Body name="r1Man" type="dynamic">
+	    <offsetfrom>RightFrontalWrist</offsetfrom>
+	    <Translation>0 0 -0.2</Translation>
+	    </Body>
+
+	    <Joint name="q1Man" type="hinge" enable="False">
+	    <Body>RightFrontalWrist</Body>
+	    <Body>r1Man</Body>
+	    <limitsdeg>0 0</limitsdeg>
+	    </Joint>
 
 
 </KinBody>
