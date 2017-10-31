@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Robot name="HandRightarm">
+<Robot name="HandRightArm">
   <KinBody file="teo_rightArm.kinbody.xml"/>
   <KinBody file="teo_hand.kinbody.xml"/>
 
@@ -15,7 +15,7 @@
  </kinbody>
 
   <Manipulator name="rightArm">
-    <base>r10</base>
+    <base>r10</base>bridge
     <effector>r14</effector>
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
     <closingdirection>1 1 1 1 1 0</closingdirection>
