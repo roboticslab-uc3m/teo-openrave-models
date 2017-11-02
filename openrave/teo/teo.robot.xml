@@ -59,8 +59,8 @@
     <Translation>0 0 0</Translation>-->
   </Manipulator>
 
-  <Manipulator name="arm">
-    <effector>r1Man</effector>   <!-- last link where end effector is attached-->
+  <Manipulator name="rightArm">
+    <effector>r14</effector>   <!-- last link where end effector is attached-->
     <base>r31</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
@@ -68,18 +68,20 @@
     <!-- use iksolver field to identity it.-->
     <!-- <iksolver>MyTriDOFSolver</iksolver> -->
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
-    <closingdirection>1 1 1 1 1 1</closingdirection>
-    <Translation>0 0 0</Translation>-->
+  <direction>0 0 -1</direction>
+  <Translation>0 0 -0.2</Translation>
+  <closingdirection>1 1 1 1 1 1</closingdirection>
   </Manipulator>
 
   <!-- KinBody: teo_hand -->	
  <kinbody>
-   <body name="handbase">
+   <body name="RightFrontalWrist">
      <offsetfrom>r14</offsetfrom>
    </body>
+   <!--<joint name="dummyhand" type="hinge" enable="false">-->
    <joint name="dummyhand" type="hinge" enable="false">
      <body>r14</body>
-     <body>handbase</body>
+     <body>RightFrontalWrist</body>
      <limits>0 0</limits>
    </joint>
  </kinbody>
