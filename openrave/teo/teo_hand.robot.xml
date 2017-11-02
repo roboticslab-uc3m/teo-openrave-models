@@ -1,8 +1,8 @@
 <Robot>
   <KinBody file="teo_hand.kinbody.xml"/>
   <Manipulator name="hand">
-    <base>handbase</base>
-    <effector>handbase</effector>
+    <base>RightFrontalWrist</base>
+    <effector>r1Man</effector>
     <Translation>0 0 0</Translation>
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
     <closingdirection>1 1 1 1 1 0</closingdirection>
