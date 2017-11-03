@@ -74,15 +74,30 @@
 
   <!-- KinBody: teo_hand -->	
  <kinbody>
-   <body name="handbase">
+   <body name="RightFrontalWrist">
      <offsetfrom>r14</offsetfrom>
    </body>
-   <joint name="dummyhand" type="hinge" enable="false">
+ 
+ <Joint circular="false" name="RightFrontalWristJoint" type="hinge"> 
+	<Body>r14</Body>
+	<Body>RightFrontalWrist</Body>
+	<offsetfrom>RightFrontalWrist</offsetfrom>
+	<weight>1.0</weight>
+	<limitsdeg>-10 100</limitsdeg>
+	<axis>0 -1 0</axis> 
+	<maxvel>3</maxvel>
+	<resolution>1</resolution>
+  </Joint>
+</kinbody>
+<!--
+   <joint name="dummyhand" type="hinge">
      <body>r14</body>
-     <body>handbase</body>
-     <limitsdeg>0 0</limitsdeg>
+     <body>RightFrontalWrist</body>
+     <limitsdeg>-10 100</limitsdeg>
+     <axis>0 -1 0</axis> 
+     <maxvel>3</maxvel>
    </joint>
- </kinbody>
+ -->
 
 
   <Manipulator name="leftArm">
