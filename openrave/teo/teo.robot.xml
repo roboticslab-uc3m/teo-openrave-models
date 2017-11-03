@@ -26,7 +26,6 @@
     <!-- rightHand -->
     <KinBody name="rightHand" file="teo_hand.kinbody.xml" />
 
-
     <!-- leftArm -->
     <KinBody name="leftArm" file="teo_leftArm.kinbody.xml" />
 
@@ -64,25 +63,24 @@
     <base>r31</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
-    <iksolver>WAM7ikfast 0.05</iksolver>
     <!-- use iksolver field to identity it.-->
+    <iksolver>WAM7ikfast 0.05</iksolver>
     <!-- <iksolver>MyTriDOFSolver</iksolver> -->
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
   <direction>0 0 -1</direction>
   <Translation>0 0 -0.2</Translation>
-  <closingdirection>1 1 1 1 1 1</closingdirection>
+  <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
   </Manipulator>
 
   <!-- KinBody: teo_hand -->	
  <kinbody>
-   <body name="RightFrontalWrist">
+   <body name="handbase">
      <offsetfrom>r14</offsetfrom>
    </body>
-   <!--<joint name="dummyhand" type="hinge" enable="false">-->
    <joint name="dummyhand" type="hinge" enable="false">
      <body>r14</body>
-     <body>RightFrontalWrist</body>
-     <limits>0 0</limits>
+     <body>handbase</body>
+     <limitsdeg>0 0</limitsdeg>
    </joint>
  </kinbody>
 
