@@ -59,7 +59,7 @@
   </Manipulator>
 
   <Manipulator name="rightArm">
-    <effector>r14</effector>   <!-- last link where end effector is attached-->
+    <effector>r1Man</effector>   <!-- last link where end effector is attached-->
     <base>r31</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
@@ -72,7 +72,8 @@
   <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
   </Manipulator>
 
-  <!-- KinBody: teo_hand -->	
+  <!-- KinBody: teo_hand -->
+<!--	
  <kinbody>
    <body name="RightFrontalWrist">
      <offsetfrom>r14</offsetfrom>
@@ -89,6 +90,7 @@
 	<resolution>1</resolution>
   </Joint>
 </kinbody>
+-->
 <!--
    <joint name="dummyhand" type="hinge">
      <body>r14</body>
