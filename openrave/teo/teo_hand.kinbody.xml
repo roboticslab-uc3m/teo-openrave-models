@@ -184,4 +184,18 @@
             <resolution>1</resolution>
             </Joint>
 
+	<!-- TCP (effector) -->
+<!--
+	    <Body name="r1Man" type="dynamic">
+	    <offsetfrom>RightFrontalWrist</offsetfrom>
+	    <Translation>0 0 -0.2</Translation>
+	    </Body>
+
+	    <Joint name="q1Man" type="hinge" enable="False">
+	    <Body>RightFrontalWrist</Body>
+	    <Body>r1Man</Body>
+	    <limitsdeg>0 0</limitsdeg>
+	    </Joint>
+-->
+
 </KinBody>
