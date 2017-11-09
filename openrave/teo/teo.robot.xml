@@ -64,7 +64,7 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
-    <iksolver>WAM7ikfast 0.05</iksolver>
+    <iksolver>ik/rightArmIk.so</iksolver>
     <!-- <iksolver>MyTriDOFSolver</iksolver> -->
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
   <direction>0 0 -1</direction>
