@@ -72,6 +72,22 @@
   <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
   </Manipulator>
 
+<!-- rightArm_trunk -->
+  <Manipulator name="rightArm_trunk">
+    <effector>r1Man</effector>   <!-- last link where end effector is attached-->
+    <base>cintura</base>           <!-- base link-->
+    <!-- the id of the inverse kinematics solver, it is not necessary to-->
+    <!-- specify an ik solver for every robot. But if there is one,-->
+    <!-- use iksolver field to identity it.-->
+    <iksolver>ik/rightArmTrunkIk.so</iksolver>
+    <!-- <iksolver>MyTriDOFSolver</iksolver> -->
+    <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
+  <direction>0 0 -1</direction>
+  <Translation>0 0 -0.2</Translation>
+  <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
+  </Manipulator>
+
+
   <!-- KinBody: teo_hand -->
 <!--	
  <kinbody>
