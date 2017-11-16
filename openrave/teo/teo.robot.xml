@@ -24,10 +24,13 @@
     <KinBody name="rightArm" file="teo_rightArm.kinbody.xml" />
 
     <!-- rightHand -->
-    <KinBody name="rightHand" file="teo_hand.kinbody.xml" />
+    <KinBody name="rightHand" file="teo_rightHand.kinbody.xml" />
 
     <!-- leftArm -->
     <KinBody name="leftArm" file="teo_leftArm.kinbody.xml" />
+
+    <!-- rightHand -->
+    <KinBody name="leftHand" file="teo_leftHand.kinbody.xml" />
 
     <!-- rightLeg -->
     <KinBody name="rightLeg" file="teo_rightLeg.kinbody.xml" />

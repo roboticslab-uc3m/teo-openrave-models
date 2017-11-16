@@ -49,12 +49,11 @@
             <Body>RightThumbProximal</Body>
             <offsetfrom>RightThumbProximal</offsetfrom>
 	
-           <!-- <weight>1.0</weight> -->
+            <weight>1.0</weight>
             <limitsdeg>-30 10</limitsdeg>
-           <!-- <axis>0 -1 0</axis>
+            <axis>0 -1 0</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>
-	-->
             </Joint>
 
 	<!-- Dedo pulgar (thumb): falange distal (00) -->
@@ -184,18 +183,5 @@
             <resolution>1</resolution>
             </Joint>
 
-	<!-- TCP (effector) -->
-<!--
-	    <Body name="r1Man" type="dynamic">
-	    <offsetfrom>RightFrontalWrist</offsetfrom>
-	    <Translation>0 0 -0.2</Translation>
-	    </Body>
-
-	    <Joint name="q1Man" type="hinge" enable="False">
-	    <Body>RightFrontalWrist</Body>
-	    <Body>r1Man</Body>
-	    <limitsdeg>0 0</limitsdeg>
-	    </Joint>
--->
 
 </KinBody>

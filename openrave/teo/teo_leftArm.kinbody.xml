@@ -124,6 +124,8 @@
             <resolution>1</resolution>
             </Joint>
 
+
+<!--
             <Body name="r25" type="dynamic">
             <offsetfrom>r24</offsetfrom>
             <Translation>0 0 0</Translation>
@@ -147,14 +149,33 @@
             <maxvel>3</maxvel>
             <resolution>1</resolution>
             </Joint>
+-->
+
+	    <Body name="LeftFrontalWrist" type="dynamic">
+            <offsetfrom>r24</offsetfrom> 
+            <Mass type="custom">
+              <density>1</density>
+            </Mass>   
+            </Body>
+
+	 <Joint circular="false" name="LeftFrontalWristJoint" type="hinge"> 
+		<Body>r24</Body>
+		<Body>LeftFrontalWrist</Body>
+		<offsetfrom>LeftFrontalWrist</offsetfrom>
+		<weight>1.0</weight>
+		<limitsdeg>-10 100</limitsdeg>
+		<axis>0 -1 0</axis> 
+		<maxvel>3</maxvel>
+		<resolution>1</resolution>
+	  </Joint>
 
             <Body name="r2Man" type="dynamic">
-            <offsetfrom>r25</offsetfrom>
+            <offsetfrom>LeftFrontalWrist</offsetfrom>
             <Translation>0 0 -0.2</Translation>
             </Body>
 
             <Joint name="q2Man" type="hinge" enable="False">
-            <Body>r25</Body>
+            <Body>LeftFrontalWrist</Body>
             <Body>r2Man</Body>
             <limitsdeg>0 0</limitsdeg>
             </Joint>
