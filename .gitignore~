@@ -9,7 +9,7 @@
 *.pch
 
 # Compiled Dynamic libraries
-# *.so (we use this files for IK solutions)
+*.so
 *.dylib
 *.dll
 
@@ -31,9 +31,6 @@
 # Backups
 *.user
 *.swp
-
-# Others
-*.xml~
 
 #Folders
 build/

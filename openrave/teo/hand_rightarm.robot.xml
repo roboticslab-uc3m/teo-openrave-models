@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Robot name="HandRightArm">
+  <KinBody file="teo_rightArm.kinbody.xml"/>
+  <KinBody file="teo_hand.kinbody.xml"/>
+
+ <kinbody>
+   <body name="handbase">
+     <offsetfrom>r14</offsetfrom>
+   </body>
+   <joint name="dummyhand" type="hinge" enable="false">
+     <body>r14</body>
+     <body>handbase</body>
+     <limits>0 0</limits>
+   </joint>
+ </kinbody>
+
+  <Manipulator name="rightArm">
+    <base>r10</base>bridge
+    <effector>r14</effector>
+    <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
+    <closingdirection>1 1 1 1 1 0</closingdirection>
+<!--
+    <iksolver>WAM7ikfast 0.05</iksolver>
+    <Translation>0 0 0.16</Translation>
+    
+    <closingdirection>1 1 1 0</closingdirection>
+    <direction>0 0 1</direction>
+-->
+  </Manipulator>
+
+</Robot>
