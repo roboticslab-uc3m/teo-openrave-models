@@ -1,14 +1,8 @@
 <KinBody name="leftHand">
 
-	<!-- mano derecha (base)  -->
-	<!--
-	<Body name="handbase" type="dynamic">
-        </Body>
-	-->
+	<!-- Base: LeftFrontalWrist (muñeca + palma) -->
 
-	<!-- mano derecha (palma) -->
 	    <Body name="LeftFrontalWrist" type="dynamic">
-             <!-- <offsetfrom>handbase</offsetfrom>--> 
              <Translation>0 0 0</Translation>
              <Geom type="trimesh">
               <Render>models/right-hand/mano_derecha_def_rotada.wrl 0.001</Render> 
@@ -18,19 +12,8 @@
               <density>1</density>
              </Mass>
             </Body>
-	<!--
-	    <Joint circular="false" name="LeftFrontalWristJoint" type="hinge"> 
-            	<Body>handbase</Body>
-            	<Body>LeftFrontalWrist</Body>
-             	<offsetfrom>LeftFrontalWrist</offsetfrom>
-             	<weight>1.0</weight>
-             	<limitsdeg>-10 100</limitsdeg>
-             	<axis>0 -1 0</axis> 
-             	<maxvel>3</maxvel>
-             	<resolution>1</resolution>
-            </Joint>
-	-->
-	<!-- Dedo pulgar: falange proximal (00) -->
+
+	<!-- Dedo pulgar (thumb): falange proximal (00) -->
 
 	    <Body name="LeftThumbProximal" type="dynamic">
             <offsetfrom>LeftFrontalWrist</offsetfrom>
@@ -183,6 +166,5 @@
             <maxvel>3</maxvel>
             <resolution>1</resolution>
             </Joint>
-
 
 </KinBody>
