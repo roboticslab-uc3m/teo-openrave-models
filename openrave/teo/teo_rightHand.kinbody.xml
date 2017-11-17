@@ -5,8 +5,8 @@
 	    <Body name="RightFrontalWrist" type="dynamic"> 
              <Translation>0 0 0</Translation>
              <Geom type="trimesh">
-              <Render>models/right-hand/mano_derecha_def_rotada.wrl 0.001</Render> 
-              <collision>models/right-hand/mano_derecha_def_rotada.wrl 0.001</collision>
+              <Render>models/right-hand/frontal_wrist.wrl 0.001</Render> 
+              <collision>models/right-hand/frontal_wrist.wrl 0.001</collision>
              </Geom>
              <Mass type="custom">
               <density>1</density>
@@ -19,8 +19,8 @@
             <offsetfrom>RightFrontalWrist</offsetfrom>
             <Translation>0.027472302 0 -0.164588951</Translation>            
             <Geom type="trimesh">
-            <Render>models/right-hand/falange_proximal_def_rotada.wrl 0.001</Render>
-            <collision>models/right-hand/falange_proximal_def_rotada.wrl 0.001</collision>
+            <Render>models/right-hand/phalange_proximal.wrl 0.001</Render>
+            <collision>models/right-hand/phalange_proximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -45,8 +45,8 @@
             <offsetfrom>RightThumbProximal</offsetfrom>
             <Translation>0.027 0 -0.047</Translation>	                
             <Geom type="trimesh">
-            <Render>models/right-hand/falange_distal_def_rotada.wrl 0.001</Render>
-            <collision>models/right-hand/falange_distal_def_rotada.wrl 0.001</collision>
+            <Render>models/right-hand/phalange_distal.wrl 0.001</Render>
+            <collision>models/right-hand/phalange_distal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -71,8 +71,8 @@
             <Translation>-0.02852741 -0.02010339 -0.164409358</Translation>
             <RotationAxis>0 0 1 180</RotationAxis>            
             <Geom type="trimesh">
-            <Render>models/right-hand/falange_proximal_def_rotada.wrl 0.001</Render>
-            <collision>models/right-hand/falange_proximal_def_rotada.wrl 0.001</collision>
+            <Render>models/right-hand/phalange_proximal.wrl 0.001</Render>
+            <collision>models/right-hand/phalange_proximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -96,8 +96,8 @@
             <offsetfrom>RightExternalFingerProximal</offsetfrom>
             <Translation>0.027 0.0 -0.047</Translation>
             <Geom type="trimesh">
-            <Render>models/right-hand/falange_distal_def_rotada.wrl 0.001</Render>
-            <collision>models/right-hand/falange_distal_def_rotada.wrl 0.001</collision>
+            <Render>models/right-hand/phalange_distal.wrl 0.001</Render>
+            <collision>models/right-hand/phalange_distal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -122,8 +122,8 @@
             <Translation>-0.02852741 0.02010339 -0.164409358</Translation>
             <RotationAxis>0 0 1 180</RotationAxis>            
             <Geom type="trimesh">
-            <Render>models/right-hand/falange_proximal_def_rotada.wrl 0.001</Render>
-            <collision>models/right-hand/falange_proximal_def_rotada.wrl 0.001</collision>
+            <Render>models/right-hand/phalange_proximal.wrl 0.001</Render>
+            <collision>models/right-hand/phalange_proximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -147,8 +147,8 @@
             <offsetfrom>RightInternalFingerProximal</offsetfrom>
             <Translation>0.027 0.0 -0.047</Translation>           
             <Geom type="trimesh">
-            <Render>models/right-hand/falange_distal_def_rotada.wrl 0.001</Render>
-            <collision>models/right-hand/falange_distal_def_rotada.wrl 0.001</collision>
+            <Render>models/right-hand/phalange_distal.wrl 0.001</Render>
+            <collision>models/right-hand/phalange_distal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
