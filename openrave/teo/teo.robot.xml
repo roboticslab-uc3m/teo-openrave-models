@@ -39,6 +39,7 @@
     <KinBody name="leftLeg" file="teo_leftLeg.kinbody.xml" />
 
     <!-- Manipulators -->
+
   <Manipulator name="trunk">
     <effector>r31</effector>   <!-- last link where end effector is attached-->
     <base>cintura</base>           <!-- base link-->
@@ -61,6 +62,10 @@
     <Translation>0 0 0</Translation>-->
   </Manipulator>
 
+    <!-- ######## Grasping Manipulators: ##################################### 
+         ######## rightArm, rightArm_trunk, leftArm, leftArm_trunk ###########
+         #####################################################################-->
+
   <Manipulator name="rightArm">
     <effector>r1Man</effector>   <!-- last link where end effector is attached-->
     <base>r31</base>           <!-- base link-->
@@ -68,58 +73,24 @@
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
     <iksolver>ik/rightArmIk.so</iksolver>
-    <!-- <iksolver>MyTriDOFSolver</iksolver> -->
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
   <direction>0 0 -1</direction>
   <Translation>0 0 -0.2</Translation>
   <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
   </Manipulator>
 
-<!-- rightArm_trunk -->
   <Manipulator name="rightArm_trunk">
     <effector>r1Man</effector>   <!-- last link where end effector is attached-->
     <base>cintura</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
-    <iksolver>ik/rightArmTrunkIk.so</iksolver>
-    <!-- <iksolver>MyTriDOFSolver</iksolver> -->
+    <iksolver>ik/rightArmTrunkIk.so</iksolver> 
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
   <direction>0 0 -1</direction>
   <Translation>0 0 -0.2</Translation>
   <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
   </Manipulator>
-
-
-  <!-- KinBody: teo_hand -->
-<!--	
- <kinbody>
-   <body name="RightFrontalWrist">
-     <offsetfrom>r14</offsetfrom>
-   </body>
- 
- <Joint circular="false" name="RightFrontalWristJoint" type="hinge"> 
-	<Body>r14</Body>
-	<Body>RightFrontalWrist</Body>
-	<offsetfrom>RightFrontalWrist</offsetfrom>
-	<weight>1.0</weight>
-	<limitsdeg>-10 100</limitsdeg>
-	<axis>0 -1 0</axis> 
-	<maxvel>3</maxvel>
-	<resolution>1</resolution>
-  </Joint>
-</kinbody>
--->
-<!--
-   <joint name="dummyhand" type="hinge">
-     <body>r14</body>
-     <body>RightFrontalWrist</body>
-     <limitsdeg>-10 100</limitsdeg>
-     <axis>0 -1 0</axis> 
-     <maxvel>3</maxvel>
-   </joint>
- -->
-
 
   <Manipulator name="leftArm">
     <effector>r2Man</effector>   <!-- last link where end effector is attached-->
@@ -127,9 +98,25 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
-    <!-- <iksolver>MyTriDOFSolver</iksolver> -->
-
+    <joints>LeftThumbProximalJoint LeftThumbDistalJoint LeftExternalFingerProximalJoint LeftExternalFingerDistalJoint LeftInternalFingerProximalJoint LeftInternalFingerDistalJoint</joints>
+    <direction>0 0 -1</direction>
+    <Translation>0 0 -0.2</Translation>
+    <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
+    <iksolver>ik/leftArmIk.so</iksolver>    
     <Translation>0 0 0</Translation>
+  </Manipulator>
+
+  <Manipulator name="leftArm_trunk">
+    <effector>r2Man</effector>   <!-- last link where end effector is attached-->
+    <base>cintura</base>           <!-- base link-->
+    <!-- the id of the inverse kinematics solver, it is not necessary to-->
+    <!-- specify an ik solver for every robot. But if there is one,-->
+    <!-- use iksolver field to identity it.-->
+    <iksolver>ik/leftArmTrunkIk.so</iksolver>
+    <joints>LeftThumbProximalJoint LeftThumbDistalJoint LeftExternalFingerProximalJoint LeftExternalFingerDistalJoint LeftInternalFingerProximalJoint LeftInternalFingerDistalJoint</joints>
+  <direction>0 0 -1</direction>
+  <Translation>0 0 -0.2</Translation>
+  <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
   </Manipulator>
 
 
@@ -139,8 +126,6 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
-     <!--<iksolver>ik/ikfast0x10000048.Transform6D.x86_64.16_17_18_19_20_21.so</iksolver>-->
-
     <Translation>0 0 0</Translation>
     </Manipulator>
 
@@ -151,8 +136,6 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
-    <!--<iksolver>ik/ikfast0x10000048.Transform6D.x86_64.22_23_24_25_26_27.so</iksolver>-->
-
     <Translation>0 0 0</Translation>
   </Manipulator>
 
