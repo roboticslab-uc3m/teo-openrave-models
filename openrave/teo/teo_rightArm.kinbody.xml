@@ -103,7 +103,6 @@
 	    <Body name="r14" type="dynamic">
             <offsetfrom>r13</offsetfrom>
             <Translation>0 0 -0.202</Translation>
-            <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
             <Render>models/1.4^brazo_derecho_links.wrl</Render>
             <collision>models/1.4^brazo_derecho_links.wrl</collision>
@@ -124,40 +123,37 @@
             <resolution>1</resolution>
             </Joint>
 
-	    <Body name="r15" type="dynamic">
-            <offsetfrom>r14</offsetfrom>
-            <Translation>0 0 0</Translation>
-            <RotationAxis>0 0 1 0</RotationAxis>
-            <Geom type="trimesh">
-            <Render>models/1.5^brazo_derecho_links.wrl</Render>
-            <collision>models/1.5^brazo_derecho_links.wrl</collision>
-            </Geom>
+	    <Body name="RightFrontalWrist" type="dynamic">
+            <offsetfrom>r14</offsetfrom> 
             <Mass type="custom">
               <density>1</density>
-            </Mass>
+            </Mass>   
             </Body>
 
-	    <Joint circular="false" name="q15" type="hinge">
-            <Body>r14</Body>
-            <Body>r15</Body>
-            <offsetfrom>r15</offsetfrom>
-            <weight>1.0</weight>
-            <limitsdeg>-10 100</limitsdeg>
-            <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
-            <resolution>1</resolution>
-            </Joint>
+	 <Joint circular="false" name="RightFrontalWristJoint" type="hinge"> 
+		<Body>r14</Body>
+		<Body>RightFrontalWrist</Body>
+		<offsetfrom>RightFrontalWrist</offsetfrom>
+		<weight>1.0</weight>
+		<limitsdeg>-10 100</limitsdeg>
+		<axis>0 -1 0</axis> 
+		<maxvel>3</maxvel>
+		<resolution>1</resolution>
+	  </Joint>
+
+	<!-- TCP (effector) -->
 
 	    <Body name="r1Man" type="dynamic">
-	    <offsetfrom>r15</offsetfrom>
+	    <offsetfrom>RightFrontalWrist</offsetfrom>
 	    <Translation>0 0 -0.2</Translation>
 	    </Body>
 
 	    <Joint name="q1Man" type="hinge" enable="False">
-	    <Body>r15</Body>
+	    <Body>RightFrontalWrist</Body>
 	    <Body>r1Man</Body>
 	    <limitsdeg>0 0</limitsdeg>
 	    </Joint>
+
 
 	    </KinBody>
 
