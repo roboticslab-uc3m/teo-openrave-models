@@ -122,14 +122,6 @@
             <maxvel>3</maxvel>
             <resolution>1</resolution>
             </Joint>
-<!--
-	    <Body name="RightFrontalWrist" type="dynamic">
-            <offsetfrom>r14</offsetfrom> 
-            <Mass type="custom">
-              <density>1</density>
-            </Mass>   
-            </Body>
--->
 
 	    <Body name="RightFrontalWrist" type="dynamic">
             <offsetfrom>r14</offsetfrom> 

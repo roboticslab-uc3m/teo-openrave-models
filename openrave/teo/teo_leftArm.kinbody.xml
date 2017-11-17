@@ -124,33 +124,6 @@
             <resolution>1</resolution>
             </Joint>
 
-
-<!--
-            <Body name="r25" type="dynamic">
-            <offsetfrom>r24</offsetfrom>
-            <Translation>0 0 0</Translation>
-            <RotationAxis>0 0 1 0</RotationAxis>
-            <Geom type="trimesh">
-            <Render>models/2.5^brazo_izquierdo_links.wrl</Render>
-            <collision>models/2.5^brazo_izquierdo_links.wrl</collision>
-            </Geom>
-            <Mass type="custom">
-              <density>1</density>
-            </Mass>
-            </Body>
-
-            <Joint circular="false" name="q25" type="hinge">
-            <Body>r24</Body>
-            <Body>r25</Body>
-            <offsetfrom>r25</offsetfrom>
-            <weight>1.0</weight>
-            <limitsdeg>-100 10</limitsdeg>
-            <axis>0 1 0</axis>
-            <maxvel>3</maxvel>
-            <resolution>1</resolution>
-            </Joint>
--->
-
 	    <Body name="LeftFrontalWrist" type="dynamic">
             <offsetfrom>r24</offsetfrom> 
             <Mass type="custom">
@@ -168,6 +141,8 @@
 		<maxvel>3</maxvel>
 		<resolution>1</resolution>
 	  </Joint>
+
+	<!-- TCP (effector) -->
 
             <Body name="r2Man" type="dynamic">
             <offsetfrom>LeftFrontalWrist</offsetfrom>
