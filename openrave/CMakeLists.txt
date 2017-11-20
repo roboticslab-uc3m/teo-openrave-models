@@ -18,5 +18,5 @@ file(GLOB teo/ik ${CMAKE_CURRENT_SOURCE_DIR}/teo/ik/*.so)
 
 yarp_install(FILES ${teo} DESTINATION ${TEO-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR}/${appname}/teo)
 yarp_install(FILES ${teo/models} DESTINATION ${TEO-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR}/${appname}/teo/models)
-yarp_install(FILES ${teo/models} DESTINATION ${TEO-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR}/${appname}/teo/ik)
+yarp_install(FILES ${teo/ik} DESTINATION ${TEO-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR}/${appname}/teo/ik)
 
