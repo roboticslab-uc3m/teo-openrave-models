@@ -14,7 +14,7 @@ yarp_configure_external_installation(teo-openrave-models)
 
 file(GLOB teo ${CMAKE_CURRENT_SOURCE_DIR}/teo/*.xml)
 file(GLOB teo/models ${CMAKE_CURRENT_SOURCE_DIR}/teo/models/*.wrl)
-file(GLOB teo/models ${CMAKE_CURRENT_SOURCE_DIR}/teo/ik/*.so)
+file(GLOB teo/ik ${CMAKE_CURRENT_SOURCE_DIR}/teo/ik/*.so)
 
 yarp_install(FILES ${teo} DESTINATION ${TEO-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR}/${appname}/teo)
 yarp_install(FILES ${teo/models} DESTINATION ${TEO-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR}/${appname}/teo/models)
