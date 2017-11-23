@@ -17,12 +17,12 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q20" type="hinge">
+            <Joint circular="false" name="q20" type="hinge">
             <Body>r31</Body>
             <Body>r20</Body>
             <offsetfrom>r20</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-75 45</limitsdeg>
+            <limitsdeg>-70 45</limitsdeg> <!-- <limitsdeg>-75 45</limitsdeg> -->
             <axis>0 1 0</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>
@@ -70,7 +70,7 @@
             <Body>r22</Body>
             <offsetfrom>r22</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-10 75</limitsdeg>
+            <limitsdeg>-50 55</limitsdeg> <!-- <limitsdeg>-10 75</limitsdeg> -->
             <axis>0 0 -1</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>
@@ -136,7 +136,7 @@
 		<Body>LeftFrontalWrist</Body>
 		<offsetfrom>LeftFrontalWrist</offsetfrom>
 		<weight>1.0</weight>
-		<limitsdeg>-10 100</limitsdeg>
+		<limitsdeg>-90 55</limitsdeg> <!-- <limitsdeg>-10 100</limitsdeg> -->
 		<axis>0 -1 0</axis> 
 		<maxvel>3</maxvel>
 		<resolution>1</resolution>
