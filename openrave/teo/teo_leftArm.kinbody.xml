@@ -137,7 +137,7 @@
 		<offsetfrom>LeftFrontalWrist</offsetfrom>
 		<weight>1.0</weight>
 		<limitsdeg>-90 55</limitsdeg> <!-- <limitsdeg>-10 100</limitsdeg> -->
-		<axis>0 -1 0</axis> 
+		<axis>0 1 0</axis>
 		<maxvel>3</maxvel>
 		<resolution>1</resolution>
 	  </Joint>
