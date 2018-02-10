@@ -1,7 +1,7 @@
 
 <!-- head -->
 
-        <KinBody name="head" makejoinedlinksadjacent="1">
+        <KinBody name="head" > <!-- makejoinedlinksadjacent="1" -->
 
 
 	    <Body name="r00" type="dynamic">
@@ -16,7 +16,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="true" name="q00" type="hinge">
+	    <Joint circular="false" name="q00" type="hinge">
             <Body>r31</Body>
             <Body>r00</Body>
             <offsetfrom>r00</offsetfrom>
@@ -40,7 +40,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="true" name="q01" type="hinge">
+	    <Joint circular="false" name="q01" type="hinge">
             <Body>r00</Body>
             <Body>r01</Body>
             <offsetfrom>r01</offsetfrom>
