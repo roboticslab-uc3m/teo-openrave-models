@@ -16,7 +16,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="true" name="q30" type="hinge">
+	    <Joint circular="false" name="q30" type="hinge">
             <Body>cintura</Body>
             <Body>r30</Body>
             <offsetfrom>r30</offsetfrom>
@@ -39,12 +39,12 @@
             </Mass>
             </Body>
 
-	    <Joint circular="true" name="q31" type="hinge">
+	    <Joint circular="false" name="q31" type="hinge">
             <Body>r30</Body>
             <Body>r31</Body>
             <offsetfrom>r30</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-10 10</limitsdeg>
+            <limitsdeg>-10 50</limitsdeg>
             <axis>0 1 0</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>

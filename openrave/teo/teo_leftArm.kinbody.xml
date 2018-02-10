@@ -17,12 +17,12 @@
             </Mass>
             </Body>
 
-            <Joint circular="true" name="q20" type="hinge">
+            <Joint circular="false" name="q20" type="hinge">
             <Body>r31</Body>
             <Body>r20</Body>
             <offsetfrom>r20</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-75 45</limitsdeg>
+            <limitsdeg>-70 45</limitsdeg> <!-- <limitsdeg>-75 45</limitsdeg> -->
             <axis>0 1 0</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>
@@ -70,7 +70,7 @@
             <Body>r22</Body>
             <offsetfrom>r22</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-10 75</limitsdeg>
+            <limitsdeg>-50 55</limitsdeg> <!-- <limitsdeg>-10 75</limitsdeg> -->
             <axis>0 0 -1</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>
@@ -124,37 +124,33 @@
             <resolution>1</resolution>
             </Joint>
 
-            <Body name="r25" type="dynamic">
-            <offsetfrom>r24</offsetfrom>
-            <Translation>0 0 0</Translation>
-            <RotationAxis>0 0 1 0</RotationAxis>
-            <Geom type="trimesh">
-            <Render>models/2.5^brazo_izquierdo_links.wrl</Render>
-            <collision>models/2.5^brazo_izquierdo_links.wrl</collision>
-            </Geom>
+	    <Body name="LeftFrontalWrist" type="dynamic">
+            <offsetfrom>r24</offsetfrom> 
             <Mass type="custom">
               <density>1</density>
-            </Mass>
+            </Mass>   
             </Body>
 
-            <Joint circular="false" name="q25" type="hinge">
-            <Body>r24</Body>
-            <Body>r25</Body>
-            <offsetfrom>r25</offsetfrom>
-            <weight>1.0</weight>
-            <limitsdeg>-100 10</limitsdeg>
-            <axis>0 1 0</axis>
-            <maxvel>3</maxvel>
-            <resolution>1</resolution>
-            </Joint>
+	 <Joint circular="false" name="LeftFrontalWristJoint" type="hinge"> 
+		<Body>r24</Body>
+		<Body>LeftFrontalWrist</Body>
+		<offsetfrom>LeftFrontalWrist</offsetfrom>
+		<weight>1.0</weight>
+		<limitsdeg>-90 55</limitsdeg> <!-- <limitsdeg>-10 100</limitsdeg> -->
+		<axis>0 1 0</axis>
+		<maxvel>3</maxvel>
+		<resolution>1</resolution>
+	  </Joint>
+
+	<!-- TCP (effector) -->
 
             <Body name="r2Man" type="dynamic">
-            <offsetfrom>r25</offsetfrom>
+            <offsetfrom>LeftFrontalWrist</offsetfrom>
             <Translation>0 0 -0.2</Translation>
             </Body>
 
             <Joint name="q2Man" type="hinge" enable="False">
-            <Body>r25</Body>
+            <Body>LeftFrontalWrist</Body>
             <Body>r2Man</Body>
             <limitsdeg>0 0</limitsdeg>
             </Joint>
