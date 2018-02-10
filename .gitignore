@@ -31,9 +31,7 @@
 # Backups
 *.user
 *.swp
-
-# Others
-*.xml~
+*~
 
 #Folders
 build/
