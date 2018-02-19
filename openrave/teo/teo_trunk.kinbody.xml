@@ -21,7 +21,7 @@
             <Body>r30</Body>
             <offsetfrom>r30</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-45 45</limitsdeg>
+            <limitsdeg>-59.3 46.3</limitsdeg>
             <axis>0 0 1</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>
@@ -44,7 +44,7 @@
             <Body>r31</Body>
             <offsetfrom>r30</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-10 50</limitsdeg>
+            <limitsdeg>-10.1 90.4</limitsdeg>
             <axis>0 1 0</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>
