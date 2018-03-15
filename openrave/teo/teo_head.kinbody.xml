@@ -5,7 +5,7 @@
 
 
 	    <Body name="r00" type="dynamic">
-            <offsetfrom>r31</offsetfrom>
+            <offsetfrom>FrontalWaist</offsetfrom>
             <Translation>0 0 0.435</Translation>
             <Geom type="trimesh">
             <Render>models/0.0^cabeza_links.wrl</Render>
@@ -17,7 +17,7 @@
             </Body>
 
 	    <Joint circular="false" name="q00" type="hinge">
-            <Body>r31</Body>
+            <Body>FrontalWaist</Body>
             <Body>r00</Body>
             <offsetfrom>r00</offsetfrom>
             <weight>1.0</weight>

@@ -27,7 +27,7 @@
             <resolution>1</resolution>
             </Joint>
 
-	    <Body name="r31" type="dynamic">
+	    <Body name="FrontalWaist" type="dynamic">
             <offsetfrom>AxialWaist</offsetfrom>
             <Translation>0 0 0</Translation>
             <Geom type="trimesh">
@@ -41,7 +41,7 @@
 
 	    <Joint circular="false" name="q31" type="hinge">
             <Body>AxialWaist</Body>
-            <Body>r31</Body>
+            <Body>FrontalWaist</Body>
             <offsetfrom>AxialWaist</offsetfrom>
             <weight>1.0</weight>
             <limitsdeg>-10.1 90.4</limitsdeg>

@@ -5,7 +5,7 @@
         <KinBody name="rightArm" makejoinedlinksadjacent="1">
 
 	    <Body name="r10" type="dynamic">
-            <offsetfrom>r31</offsetfrom>
+            <offsetfrom>FrontalWaist</offsetfrom>
             <Translation>0 -0.26292 0.305</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
@@ -18,7 +18,7 @@
             </Body>
 
 	    <Joint circular="false" name="q10" type="hinge">
-            <Body>r31</Body>
+            <Body>FrontalWaist</Body>
             <Body>r10</Body>
             <offsetfrom>r10</offsetfrom>
             <weight>1.0</weight>

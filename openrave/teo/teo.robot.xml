@@ -41,7 +41,7 @@
     <!-- Manipulators -->
 
   <Manipulator name="trunk">
-    <effector>r31</effector>   <!-- last link where end effector is attached-->
+    <effector>FrontalWaist</effector>   <!-- last link where end effector is attached-->
     <base>RootWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
@@ -53,7 +53,7 @@
 
   <Manipulator name="head">
     <effector>r01</effector>   <!-- last link where end effector is attached-->
-    <base>r31</base>           <!-- base link-->
+    <base>FrontalWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
@@ -68,7 +68,7 @@
 
   <Manipulator name="rightArm">
     <effector>r1Man</effector>   <!-- last link where end effector is attached-->
-    <base>r31</base>           <!-- base link-->
+    <base>FrontalWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
@@ -94,7 +94,7 @@
 
   <Manipulator name="leftArm">
     <effector>r2Man</effector>   <!-- last link where end effector is attached-->
-    <base>r31</base>           <!-- base link-->
+    <base>FrontalWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
