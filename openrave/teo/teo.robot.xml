@@ -1,12 +1,12 @@
 <Robot name="teoSim">
 
     <KinBody name="base">
-        <Body name="cintura" type="dynamic">
+        <Body name="RootWaist" type="dynamic">
         <Geom type="trimesh">
             <Translation>0 0 0</Translation>
             <rotationaxis>0 0 1 0</rotationaxis>
-            <Render>models/cintura_links.wrl</Render>
-            <collision>models/cintura_links.wrl</collision>
+            <Render>models/RootWaist_links.wrl</Render>
+            <collision>models/RootWaist_links.wrl</collision>
         </Geom>
         <Mass type="custom">
             <density>1</density>
@@ -42,7 +42,7 @@
 
   <Manipulator name="trunk">
     <effector>r31</effector>   <!-- last link where end effector is attached-->
-    <base>cintura</base>           <!-- base link-->
+    <base>RootWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
@@ -81,7 +81,7 @@
 
   <Manipulator name="rightArm_trunk">
     <effector>r1Man</effector>   <!-- last link where end effector is attached-->
-    <base>cintura</base>           <!-- base link-->
+    <base>RootWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
@@ -108,7 +108,7 @@
 
   <Manipulator name="leftArm_trunk">
     <effector>r2Man</effector>   <!-- last link where end effector is attached-->
-    <base>cintura</base>           <!-- base link-->
+    <base>RootWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
@@ -125,7 +125,7 @@
 
    <Manipulator name="rightLeg">
     <effector>r5Man</effector>   <!-- last link where end effector is attached-->
-    <base>cintura</base>           <!-- base link-->
+    <base>RootWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
@@ -135,7 +135,7 @@
 
   <Manipulator name="leftLeg">
     <effector>r6Man</effector>   <!-- last link where end effector is attached-->
-    <base>cintura</base>           <!-- base link-->
+    <base>RootWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->

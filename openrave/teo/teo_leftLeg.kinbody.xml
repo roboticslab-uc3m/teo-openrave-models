@@ -5,7 +5,7 @@
 	<KinBody name="leftLeg" makejoinedlinksadjacent="1">
 
 	<Body name="r60" type="dynamic">
-	<offsetfrom>cintura</offsetfrom>
+	<offsetfrom>RootWaist</offsetfrom>
 	<Translation>0 0.146 0</Translation>
 	<RotationAxis>0 0 1 0</RotationAxis>
 	<Geom type="trimesh">
@@ -18,7 +18,7 @@
 	</Body>
 
 	<Joint circular="false" name="q60" type="hinge">
-	<Body>cintura</Body>
+	<Body>RootWaist</Body>
 	<Body>r60</Body>
 	<offsetfrom>r60</offsetfrom>
 	<weight>1.0</weight>
