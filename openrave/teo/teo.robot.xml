@@ -72,7 +72,6 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
-    <iksolver>ik/rightArmIk.so</iksolver>
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
   <direction>0 0 -1</direction>
   <Translation>0 0 -0.2</Translation>
@@ -85,7 +84,6 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
-    <iksolver>ik/rightArmTrunkIk.so</iksolver> 
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
   <direction>0 0 -1</direction>
   <Translation>0 0 -0.2</Translation>
@@ -102,7 +100,6 @@
     <direction>0 0 -1</direction>
     <Translation>0 0 -0.2</Translation>
     <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
-    <iksolver>ik/leftArmIk.so</iksolver>    
     <Translation>0 0 0</Translation>
   </Manipulator>
 
@@ -111,8 +108,7 @@
     <base>RootWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
-    <!-- use iksolver field to identity it.-->
-    <iksolver>ik/leftArmTrunkIk.so</iksolver>
+    <!-- use iksolver field to identity it.-->    
     <joints>LeftThumbProximalJoint LeftThumbDistalJoint LeftExternalFingerProximalJoint LeftExternalFingerDistalJoint LeftInternalFingerProximalJoint LeftInternalFingerDistalJoint</joints>
     <direction>0 0 -1</direction>
     <Translation>0 0 -0.2</Translation>
