@@ -16,13 +16,13 @@ try:
 
     if not cdmodel.load(): 
         # If not already in the database. Generate:
-        print 'ConvexDecomposition not found, generating...'
+        print 'ConvexDecomposition not found, generating (allow 1-2 min)...'
         cdmodel.generate(padding=0.02)  # Else defaults to 0.005 padding
         print 'ConvexDecomposition generated, saving...'
         cdmodel.save()
         print 'Finished saving'
     else:
-        print 'Using found ConvexDecomposition.'
+        print 'Found ConvexDecomposition, will use loaded model.'
 
     print 'Setting robot...'
     cdmodel.setrobot()
