@@ -6,15 +6,9 @@ from openravepy import *
 try:
     RaveInitialize()
 
-    if not RaveLoadPlugin('OpenraveYarpPluginLoader'):
-        raveLogError("Plugin not correctly loaded")
-
     env=Environment()
     env.SetViewer('qtcoin')
     env.Load('/usr/local/share/teo-openrave-models/contexts/openrave/teo/teo.robot.xml')
-
-    OpenraveYarpPluginLoader = RaveCreateModule(env,'OpenraveYarpPluginLoader')
-    print OpenraveYarpPluginLoader.SendCommand('open --device controlboardwrapper2 --subdevice YarpOpenraveControlboard --robotIndex 0 --manipulatorIndex 0 --collision')
 
     # Convex Decomposition
     teo_robot = env.GetRobots()[0]
@@ -27,10 +21,18 @@ try:
         print 'ConvexDecomposition generated, saving...'
         cdmodel.save()
         print 'Finished saving'
+    else:
+        print 'Using found ConvexDecomposition.'
 
     print 'Setting robot...'
     cdmodel.setrobot()
     print 'Finish setrobot'
 
-    print 'Starting visualization of the convexdecomposition model'
-    cdmodel.show()
+    print 'Starting visualization of the convexdecomposition model (blocking for now)'
+    cdmodel.show()  #  Warning: blocking for now!
+
+    while 1:
+        pass
+
+finally:
+    RaveDestroy()
