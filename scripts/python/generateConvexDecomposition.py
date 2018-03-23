@@ -2,11 +2,13 @@
 
 import openravepy
 from openravepy import *
+from openravepy.misc import *
 
 try:
     RaveInitialize()
+    InitOpenRAVELogging()  # From misc, handles: No handlers could be found for logger "openravepy.databases.convexdecomposition"
 
-    env=Environment()
+    env = Environment()
     env.SetViewer('qtcoin')
     env.Load('/usr/local/share/teo-openrave-models/contexts/openrave/teo/teo.robot.xml')
 
