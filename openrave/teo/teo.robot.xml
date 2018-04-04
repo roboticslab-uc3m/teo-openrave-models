@@ -72,6 +72,7 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
+    <!--iksolver>ik/rightArmIk.so</iksolver-->
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
   <direction>0 0 -1</direction>
   <Translation>0 0 -0.2</Translation>
@@ -84,6 +85,7 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
+    <!--iksolver>ik/rightArmTrunkIk.so</iksolver-->
     <joints>RightThumbProximalJoint RightThumbDistalJoint RightExternalFingerProximalJoint RightExternalFingerDistalJoint RightInternalFingerProximalJoint RightInternalFingerDistalJoint</joints>
   <direction>0 0 -1</direction>
   <Translation>0 0 -0.2</Translation>
@@ -96,6 +98,7 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->
+    <!--iksolver>ik/leftArmIk.so</iksolver-->
     <joints>LeftThumbProximalJoint LeftThumbDistalJoint LeftExternalFingerProximalJoint LeftExternalFingerDistalJoint LeftInternalFingerProximalJoint LeftInternalFingerDistalJoint</joints>
     <direction>0 0 -1</direction>
     <Translation>0 0 -0.2</Translation>
@@ -109,6 +112,7 @@
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
     <!-- specify an ik solver for every robot. But if there is one,-->
     <!-- use iksolver field to identity it.-->    
+    <!--iksolver>ik/leftArmTrunkIk.so</iksolver-->
     <joints>LeftThumbProximalJoint LeftThumbDistalJoint LeftExternalFingerProximalJoint LeftExternalFingerDistalJoint LeftInternalFingerProximalJoint LeftInternalFingerDistalJoint</joints>
     <direction>0 0 -1</direction>
     <Translation>0 0 -0.2</Translation>
