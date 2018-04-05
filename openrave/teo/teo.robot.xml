@@ -63,7 +63,7 @@
   </Manipulator>
 
     <!-- ######## Grasping Manipulators: ##################################### 
-         ######## rightArm, rightArm_trunk, leftArm, leftArm_trunk ###########
+         ######## rightArm, trunkAndRightArm, leftArm, trunkAndLeftArm ###########
          #####################################################################-->
 
   <Manipulator name="rightArm">
@@ -79,7 +79,7 @@
   <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
   </Manipulator>
 
-  <Manipulator name="rightArm_trunk">
+  <Manipulator name="trunkAndRightArm">
     <effector>r1Man</effector>   <!-- last link where end effector is attached-->
     <base>RootWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->
@@ -106,7 +106,7 @@
     <Translation>0 0 0</Translation>
   </Manipulator>
 
-  <Manipulator name="leftArm_trunk">
+  <Manipulator name="trunkAndLeftArm">
     <effector>r2Man</effector>   <!-- last link where end effector is attached-->
     <base>RootWaist</base>           <!-- base link-->
     <!-- the id of the inverse kinematics solver, it is not necessary to-->

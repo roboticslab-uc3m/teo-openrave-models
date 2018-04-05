@@ -16,7 +16,7 @@ try:
     env.Load('/usr/local/share/teo-openrave-models/contexts/openrave/teo/teo.robot.xml')
 
     robot = env.GetRobots()[0]
-    robot.SetActiveManipulator('rightArm_trunk')
+    robot.SetActiveManipulator('trunkAndRightArm')
 
     ikmodel = databases.inversekinematics.InverseKinematicsModel(robot, iktype=IkParameterizationType.Transform6D)
     if not ikmodel.load():
