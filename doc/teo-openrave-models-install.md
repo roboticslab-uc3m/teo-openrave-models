@@ -26,3 +26,11 @@ export TEO_OPENRAVE_MODELS_DIR=/path/to/teo-openrave-models/build
 
 For additional `teo-openrave-models` options use ccmake instead of cmake.
 
+### Generate OpenRAVE databases
+
+```
+cd  # go home
+cd repos/teo-openrave-models/scripts/python
+python generateConvexDecomposition.py  # Takes 1-2 min
+python generateIkfast.py  # Takes aprox 10 min
+```
