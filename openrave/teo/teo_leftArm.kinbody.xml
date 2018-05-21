@@ -118,7 +118,7 @@
             <Body>r24</Body>
             <offsetfrom>r24</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-76.4 69.6</limitsdeg>
+            <limitsdeg>-76.4 101.3</limitsdeg>
             <axis>0 0 -1</axis>
             <maxvel>3</maxvel>
             <resolution>1</resolution>
