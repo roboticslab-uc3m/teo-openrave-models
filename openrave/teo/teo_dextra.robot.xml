@@ -25,7 +25,6 @@
 
     <!-- rightHand -->
     <KinBody name="rightHand" file="teo_dextraRightHand.kinbody.xml" />
-        <rotationaxis>0 1 1 90</rotationaxis>
 
     <!-- leftArm -->
     <KinBody name="leftArm" file="teo_leftArm.kinbody.xml" />
