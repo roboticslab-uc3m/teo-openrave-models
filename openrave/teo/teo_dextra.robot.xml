@@ -155,7 +155,7 @@
 
 
     <Manipulator name="rightRing">
-        <effector>RightRingFingerMiddle</effector>   <!-- last link where end effector is attached-->
+        <effector>RightRingFingerDistal</effector>   <!-- last link where end effector is attached-->
         <base>RightFrontalWrist</base>           <!-- base link-->
     </Manipulator>
 
@@ -180,12 +180,12 @@
 
     <Manipulator name="leftMiddle">
         <effector>leftMiddleFingerDistal</effector>   <!-- last link where end effector is attached-->
-        <base>leftFrontalWrist</base>           <!-- base link-->
+        <base>LeftFrontalWrist</base>           <!-- base link-->
     </Manipulator>
 
 
     <Manipulator name="leftRing">
-        <effector>leftRingFingerMiddle</effector>   <!-- last link where end effector is attached-->
+        <effector>leftRingFingerDistal</effector>   <!-- last link where end effector is attached-->
         <base>LeftFrontalWrist</base>           <!-- base link-->
     </Manipulator>
 
