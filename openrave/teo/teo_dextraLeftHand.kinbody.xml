@@ -34,7 +34,7 @@
             <offsetfrom>leftthumbAbductor</offsetfrom>
 	
             <weight>1.0</weight>
-            <limitsdeg>0 90</limitsdeg>
+            <limitsdeg>0 -90</limitsdeg>
 	    <Anchor>0.005 0 0.01</Anchor>
             <axis>0 -1 0</axis>
             <maxvel>3</maxvel>
