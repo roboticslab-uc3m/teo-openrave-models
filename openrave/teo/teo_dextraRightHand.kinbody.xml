@@ -37,7 +37,7 @@
             <limitsdeg>0 90</limitsdeg>
 	    <Anchor>0.005 0 0.01</Anchor>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -65,7 +65,7 @@
             <weight>1.0</weight>
             <limitsdeg>-90 90</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -90,7 +90,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis> 	<!-- sentido de giro de la joint -->
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -117,7 +117,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -142,7 +142,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -167,7 +167,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -194,7 +194,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -219,7 +219,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -244,7 +244,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -271,7 +271,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -296,7 +296,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -321,7 +321,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -348,7 +348,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -373,7 +373,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -398,7 +398,7 @@
             <weight>1.0</weight>
             <limitsdeg>-7 -85</limitsdeg>
             <axis>0 -1 0</axis>
-            <maxvel>3</maxvel>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
