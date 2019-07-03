@@ -22,7 +22,7 @@
 	<Body>r60</Body>
 	<offsetfrom>r60</offsetfrom>
 	<weight>1.0</weight>
-	<limitsdeg>-32.8 27.9</limitsdeg>
+	<limitsdeg>-27.9 32.8</limitsdeg>
 	<axis>0 0 1</axis>
 	<maxveldeg>30</maxveldeg>
 	<resolution>1</resolution>
@@ -45,7 +45,7 @@
 	<Body>r61</Body>
 	<offsetfrom>r61</offsetfrom>
 	<weight>1.0</weight>
-	<limitsdeg>-14.2 12.5</limitsdeg>
+	<limitsdeg>-12.5 14.2</limitsdeg>
 	<axis>1 0 0</axis>
 	<maxveldeg>30</maxveldeg>
 	<resolution>1</resolution>
@@ -150,7 +150,7 @@
 	<Body>r65</Body>
 	<offsetfrom>r65</offsetfrom>
 	<weight>1.0</weight>
-	<limitsdeg>-19.9 42.5</limitsdeg>
+	<limitsdeg>-42.5 19.9</limitsdeg>
 	<axis>1 0 0</axis>
 	<maxveldeg>30</maxveldeg>
 	<resolution>1</resolution>
