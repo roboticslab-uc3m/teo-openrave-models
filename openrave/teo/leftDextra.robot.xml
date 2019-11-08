@@ -1,0 +1,5 @@
+<Robot name="leftDextra">
+
+    <KinBody file="leftDextra.kinbody.xml" />
+
+</Robot>
