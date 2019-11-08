@@ -1,0 +1,5 @@
+<Robot name="lacqueyFetch">
+
+    <KinBody file="lacqueyFetch.kinbody.xml" />
+
+</Robot>
