@@ -1,36 +1,35 @@
 <Robot name="teo_lacqueyFetch">
 
     <robot file="teo.robot.xml"></robot>
-    
-    <robot file="lacqueyFetch.robot.xml" name="rightLacqueyFetch"></robot>
-    
+
+    <robot prefix="left_" file="lacqueyFetch.robot.xml"> <!-- name="leftLacqueyFetch" -->
+    </robot>
+
     <kinbody>
-        <body name="hand_root">
-                <offsetfrom>link6</offsetfrom>
-                <translation>0.03 0 0</translation>
-                <rotationaxis>0 1 0 90</rotationaxis>
+        <body name="left_FrontalWrist">
+                <offsetfrom>r1Man</offsetfrom>
+                <translation>0 0 0.2</translation>
         </body>
-            <joint type="hinge" enable="false">
-                <body>link6</body>
-                <body>hand_root</body>
-                <limits>0 0</limits>
-            </joint>
+        <joint type="hinge" enable="false">
+            <body>r1Man</body>
+            <body>left_FrontalWrist</body>
+            <limits>0 0</limits>
+        </joint>
     </kinbody>
 
-    <!--robot file="lacqueyFetch.robot.xml" name="leftLacqueyFetch"></robot>
+    <robot prefix="right_" file="lacqueyFetch.robot.xml"> <!-- name="leftLacqueyFetch" -->
+    </robot>
 
     <kinbody>
-        <body name="hand_root">
-                <offsetfrom>link6</offsetfrom>
-                <translation>0.03 0 0</translation>
-                <rotationaxis>0 1 0 90</rotationaxis>
+        <body name="right_FrontalWrist">
+                <offsetfrom>r2Man</offsetfrom>
+                <translation>0 0 0.2</translation>
         </body>
-            <joint type="hinge" enable="false">
-                <body>link6</body>
-                <body>hand_root</body>
-                <limits>0 0</limits>
-            </joint>
-    </kinbody-->
-
+        <joint type="hinge" enable="false">
+            <body>r2Man</body>
+            <body>right_FrontalWrist</body>
+            <limits>0 0</limits>
+        </joint>
+    </kinbody>
 
 </Robot>
