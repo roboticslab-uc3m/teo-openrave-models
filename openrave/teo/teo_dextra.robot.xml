@@ -137,4 +137,65 @@
         <Translation>0 0 0</Translation>
     </Manipulator>
 
+    <Manipulator name="rightThumb">
+        <effector>RightThumbDistal</effector>   <!-- last link where end effector is attached-->
+        <base>RightFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+    <Manipulator name="rightIndex">
+        <effector>RightIndexFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>RightFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+
+    <Manipulator name="rightMiddle">
+        <effector>RightMiddleFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>RightFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+
+    <Manipulator name="rightRing">
+        <effector>RightRingFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>RightFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+
+    <Manipulator name="rightPinky">
+        <effector>RightPinkyFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>RightFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+
+
+    <Manipulator name="leftThumb">
+        <effector>leftThumbDistal</effector>   <!-- last link where end effector is attached-->
+        <base>LeftFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+    <Manipulator name="leftIndex">
+        <effector>leftIndexFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>LeftFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+
+    <Manipulator name="leftMiddle">
+        <effector>leftMiddleFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>LeftFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+
+    <Manipulator name="leftRing">
+        <effector>leftRingFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>LeftFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+
+    <Manipulator name="leftPinky">
+        <effector>leftPinkyFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>LeftFrontalWrist</base>           <!-- base link-->
+    </Manipulator>
+
+
+
+
 </Robot>
