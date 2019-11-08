@@ -2,7 +2,7 @@
 
     <robot file="teo.robot.xml"></robot>
 
-    <robot prefix="left_" file="lacqueyFetch.robot.xml"> <!-- name="leftLacqueyFetch" -->
+    <robot prefix="left_" file="lacqueyFetch.robot.xml">
     </robot>
 
     <kinbody>
