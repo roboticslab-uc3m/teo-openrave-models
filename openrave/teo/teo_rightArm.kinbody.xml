@@ -17,7 +17,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="q10" type="hinge">
+	    <Joint circular="false" name="FrontalRightShoulder" type="hinge">
             <Body>FrontalWaist</Body>
             <Body>r10</Body>
             <offsetfrom>r10</offsetfrom>
@@ -41,7 +41,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="q11" type="hinge">
+	    <Joint circular="false" name="SaggitalRightShoulder" type="hinge">
             <Body>r10</Body>
             <Body>r11</Body>
             <offsetfrom>r11</offsetfrom>
@@ -65,7 +65,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="q12" type="hinge">
+	    <Joint circular="false" name="AxialRightShoulder" type="hinge">
             <Body>r11</Body>
             <Body>r12</Body>
             <offsetfrom>r12</offsetfrom>
@@ -89,7 +89,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="q13" type="hinge">
+	    <Joint circular="false" name="FrontalRightElbow" type="hinge">
             <Body>r12</Body>
             <Body>r13</Body>
             <offsetfrom>r13</offsetfrom>
@@ -112,7 +112,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="q14" type="hinge">
+	    <Joint circular="false" name="AxialRightWrist" type="hinge">
             <Body>r13</Body>
             <Body>r14</Body>
             <offsetfrom>r14</offsetfrom>
@@ -130,7 +130,7 @@
             </Mass>   
             </Body>
 
-	 <Joint circular="false" name="RightFrontalWristJoint" type="hinge"> 
+	 <Joint circular="false" name="FrontalRightWrist" type="hinge"> 
 		<Body>r14</Body>
 		<Body>RightFrontalWrist</Body>
 		<offsetfrom>RightFrontalWrist</offsetfrom>

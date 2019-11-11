@@ -16,7 +16,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="q00" type="hinge">
+	    <Joint circular="false" name="AxialNeck" type="hinge">
             <Body>FrontalWaist</Body>
             <Body>AxialNeck</Body>
             <offsetfrom>AxialNeck</offsetfrom>
@@ -40,7 +40,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="q01" type="hinge">
+	    <Joint circular="false" name="FrontalNeck" type="hinge">
             <Body>AxialNeck</Body>
             <Body>FrontalNeck</Body>
             <offsetfrom>FrontalNeck</offsetfrom>

@@ -15,7 +15,7 @@
         </Mass>
         </Body>
 
-        <Joint circular="false" name="q50" type="hinge">
+        <Joint circular="false" name="AxialRightHip" type="hinge">
         <Body>RootWaist</Body>
         <Body>r50</Body>
         <offsetfrom>r50</offsetfrom>
@@ -39,7 +39,7 @@
         </Mass>
         </Body>
 
-        <Joint circular="false" name="q51" type="hinge">
+        <Joint circular="false" name="SaggitalRightHip" type="hinge">
         <Body>r50</Body>
         <Body>r51</Body>
         <offsetfrom>r51</offsetfrom>
@@ -64,7 +64,7 @@
         </Mass>
         </Body>
 
-        <Joint circular="false" name="q52" type="hinge">
+        <Joint circular="false" name="FrontalRightHip" type="hinge">
         <Body>r51</Body>
         <Body>r52</Body>
         <offsetfrom>r52</offsetfrom>
@@ -87,7 +87,7 @@
         </Mass>
         </Body>
 
-        <Joint circular="false" name="q53" type="hinge">
+        <Joint circular="false" name="FrontalRightKnee" type="hinge">
         <Body>r52</Body>
         <Body>r53</Body>
         <offsetfrom>r53</offsetfrom>
@@ -121,7 +121,7 @@
         </Mass>
         </Body>
 
-        <Joint circular="false" name="q54" type="hinge">
+        <Joint circular="false" name="FrontalRightAnkle" type="hinge">
         <Body>r5dummy</Body>
         <Body>r54</Body>
         <offsetfrom>r54</offsetfrom>
@@ -143,7 +143,7 @@
         </Mass>
         </Body>
 
-       <Joint circular="false" name="q55" type="hinge">
+       <Joint circular="false" name="SaggitalRightAnkle" type="hinge">
         <Body>r54</Body>
         <Body>r55</Body>
         <offsetfrom>r55</offsetfrom>
