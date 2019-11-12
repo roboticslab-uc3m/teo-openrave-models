@@ -4,7 +4,7 @@
 
 	<KinBody name="leftLeg" makejoinedlinksadjacent="1">
 
-	<Body name="r60" type="dynamic">
+	<Body name="AxialLeftHip" type="dynamic">
 	<offsetfrom>RootWaist</offsetfrom>
 	<Translation>0 0.146 0</Translation>
 	<RotationAxis>0 0 1 0</RotationAxis>
@@ -19,8 +19,8 @@
 
 	<Joint circular="false" name="AxialLeftHip" type="hinge">
 	<Body>RootWaist</Body>
-	<Body>r60</Body>
-	<offsetfrom>r60</offsetfrom>
+	<Body>AxialLeftHip</Body>
+	<offsetfrom>AxialLeftHip</offsetfrom>
 	<weight>1.0</weight>
 	<limitsdeg>-27.9 32.8</limitsdeg>
 	<axis>0 0 1</axis>
@@ -28,8 +28,8 @@
 	<resolution>1</resolution>
 	</Joint>
 
-	<Body name="r61" type="dynamic">
-	<offsetfrom>r60</offsetfrom>
+	<Body name="SaggitalLeftHip" type="dynamic">
+	<offsetfrom>AxialLeftHip</offsetfrom>
 	<Translation>0 0 -0.092</Translation>
 	<Geom type="trimesh">
 	<Render>models/5.1^pierna_izq_links.wrl</Render>
@@ -41,9 +41,9 @@
 	</Body>
 
 	<Joint circular="false" name="SaggitalLeftHip" type="hinge">
-	<Body>r60</Body>
-	<Body>r61</Body>
-	<offsetfrom>r61</offsetfrom>
+	<Body>AxialLeftHip</Body>
+	<Body>SaggitalLeftHip</Body>
+	<offsetfrom>SaggitalLeftHip</offsetfrom>
 	<weight>1.0</weight>
 	<limitsdeg>-12.5 14.2</limitsdeg>
 	<axis>1 0 0</axis>
@@ -52,9 +52,9 @@
 	</Joint>
 
 
-	<Body name="r62" type="dynamic">
+	<Body name="FrontalLeftHip" type="dynamic">
 	<Translation>0 0 0</Translation>
-	<offsetfrom>r61</offsetfrom>
+	<offsetfrom>SaggitalLeftHip</offsetfrom>
 	<Geom type="trimesh">
 	<Render>models/5.2^pierna_izq_links.wrl</Render>
 	<collision>models/5.2^pierna_izq_links.wrl</collision>
@@ -65,9 +65,9 @@
 	</Body>
 
 	<Joint circular="false" name="FrontalLeftHip" type="hinge">
-	<Body>r61</Body>
-	<Body>r62</Body>
-	<offsetfrom>r62</offsetfrom>
+	<Body>SaggitalLeftHip</Body>
+	<Body>FrontalLeftHip</Body>
+	<offsetfrom>FrontalLeftHip</offsetfrom>
 	<weight>1.0</weight>
 	<limitsdeg>-31.6 42.3</limitsdeg>
 	<axis>0 1 0</axis>
@@ -76,8 +76,8 @@
 	</Joint>
 
 
-	<Body name="r63" type="dynamic">
-	<offsetfrom>r62</offsetfrom>
+	<Body name="FrontalLeftKnee" type="dynamic">
+	<offsetfrom>FrontalLeftHip</offsetfrom>
 	<Translation>0 0 -0.33</Translation>
 	<Geom type="trimesh">
 	<Render>models/5.3^pierna_izq_links.wrl</Render>
@@ -89,9 +89,9 @@
 	</Body>
 
 	<Joint circular="false" name="FrontalLeftKnee" type="hinge">
-	<Body>r62</Body>
-	<Body>r63</Body>
-	<offsetfrom>r63</offsetfrom>
+	<Body>FrontalLeftHip</Body>
+	<Body>FrontalLeftKnee</Body>
+	<offsetfrom>FrontalLeftKnee</offsetfrom>
 	<weight>1.0</weight>
 	<limitsdeg>-61.3 82.4</limitsdeg>
 	<axis>0 1 0</axis>
@@ -101,17 +101,17 @@
 
 
 	<Body name="r6dummy" type="dynamic">
-	<offsetfrom>r63</offsetfrom>
+	<offsetfrom>FrontalLeftKnee</offsetfrom>
 	<Translation>0 -0.0175 -0.3</Translation>
 	</Body>
 
 	<Joint name="q6dummy" type="hinge" enable="False">
-	<Body>r63</Body>
+	<Body>FrontalLeftKnee</Body>
 	<Body>r6dummy</Body>
 	<limitsdeg>0 0</limitsdeg>
 	</Joint>
 
-	<Body name="r64" type="dynamic">
+	<Body name="FrontalLeftAnkle" type="dynamic">
 	<offsetfrom>r6dummy</offsetfrom>
 	<Translation>0 0 0</Translation>
 	<Geom type="trimesh">
@@ -125,8 +125,8 @@
 
 	<Joint circular="false" name="FrontalLeftAnkle" type="hinge">
 	<Body>r6dummy</Body>
-	<Body>r64</Body>
-	<offsetfrom>r64</offsetfrom>
+	<Body>FrontalLeftAnkle</Body>
+	<offsetfrom>FrontalLeftAnkle</offsetfrom>
 	<weight>1.0</weight>
 	<limitsdeg>-23.1 25.4</limitsdeg>
 	<axis>0 1 0</axis>
@@ -134,8 +134,8 @@
 	<resolution>1</resolution>
 	</Joint>
 
-	<Body name="r65" type="dynamic">
-	<offsetfrom>r64</offsetfrom>
+	<Body name="SaggitalLeftAnkle" type="dynamic">
+	<offsetfrom>FrontalLeftAnkle</offsetfrom>
 	<Geom type="trimesh">
 	<Render>models/5.5^pierna_izq_links.wrl</Render>
 	<collision>models/5.5^pierna_izq_links.wrl</collision>
@@ -146,9 +146,9 @@
 	</Body>
 
 	<Joint circular="false" name="SaggitalLeftAnkle" type="hinge">
-	<Body>r64</Body>
-	<Body>r65</Body>
-	<offsetfrom>r65</offsetfrom>
+	<Body>FrontalLeftAnkle</Body>
+	<Body>SaggitalLeftAnkle</Body>
+	<offsetfrom>SaggitalLeftAnkle</offsetfrom>
 	<weight>1.0</weight>
 	<limitsdeg>-42.5 19.9</limitsdeg>
 	<axis>1 0 0</axis>
@@ -158,12 +158,12 @@
 
 
 	<Body name="r6Man" type="dynamic">
-	<offsetfrom>r65</offsetfrom>
+	<offsetfrom>SaggitalLeftAnkle</offsetfrom>
 	<Translation>0 0 -0.123</Translation>
 	</Body>
 
 	<Joint name="q6Man" type="hinge" enable="False">
-	<Body>r65</Body>
+	<Body>SaggitalLeftAnkle</Body>
 	<Body>r6Man</Body>
 	<limitsdeg>0 0</limitsdeg>
 	</Joint>

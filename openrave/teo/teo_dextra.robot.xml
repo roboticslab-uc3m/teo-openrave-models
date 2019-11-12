@@ -6,13 +6,13 @@
     </robot>
 
     <kinbody>
-        <body name="LeftFrontalWrist">
+        <body name="FrontalLeftWrist">
                 <offsetfrom>r1Man</offsetfrom>
                 <translation>0 0 0.2</translation>
         </body>
         <joint name="TeoToLeftDextra" type="hinge" enable="false">
             <body>r1Man</body>
-            <body>LeftFrontalWrist</body>
+            <body>FrontalLeftWrist</body>
             <limits>0 0</limits>
         </joint>
     </kinbody>
@@ -21,13 +21,13 @@
     </robot>
 
     <kinbody>
-        <body name="RightFrontalWrist">
+        <body name="FrontalRightWrist">
                 <offsetfrom>r2Man</offsetfrom>
                 <translation>0 0 0.2</translation>
         </body>
         <joint name="TeoToRightDextra" type="hinge" enable="false">
             <body>r2Man</body>
-            <body>RightFrontalWrist</body>
+            <body>FrontalRightWrist</body>
             <limits>0 0</limits>
         </joint>
     </kinbody>

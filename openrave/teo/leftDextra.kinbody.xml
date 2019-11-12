@@ -1,8 +1,8 @@
 <KinBody name="leftHand">
 
-	<!-- Base: LeftFrontalWrist (muñeca + palma + dorsal) -->
+	<!-- Base: FrontalLeftWrist (muñeca + palma + dorsal) -->
 
-	    <Body name="LeftFrontalWrist" type="dynamic"> 
+	    <Body name="FrontalLeftWrist" type="dynamic"> 
              <Translation>0 0 0</Translation>              
              <Geom type="trimesh">
               <Render>models/7.1^manoizq_static_links.wrl 0.001</Render> 
@@ -16,7 +16,7 @@
 	<!-- Dedo pulgar: abductor (01) -->
 
 	    <Body name="leftthumbAbductor" type="dynamic">
-            <offsetfrom>LeftFrontalWrist</offsetfrom>
+            <offsetfrom>FrontalLeftWrist</offsetfrom>
             <Translation>0.026 -0.0126 -0.112</Translation>    
 	    <RotationAxis>-1 0 0 90</RotationAxis>         
             <Geom type="trimesh">
@@ -29,7 +29,7 @@
             </Body>
 
 	    <Joint circular="false" name="leftthumbAbductorJoint" type="hinge">
-            <Body>LeftFrontalWrist</Body>
+            <Body>FrontalLeftWrist</Body>
             <Body>leftthumbAbductor</Body>
             <offsetfrom>leftthumbAbductor</offsetfrom>
 	
@@ -97,7 +97,7 @@
 	<!-- Dedo meñique: falange proximal (05) -->
 
 	    <Body name="leftPinkyFingerProximal" type="dynamic">
-            <offsetfrom>LeftFrontalWrist</offsetfrom>
+            <offsetfrom>FrontalLeftWrist</offsetfrom>
             <Translation>-0.0275 0.001 -0.196</Translation>
             <RotationAxis>1 0 0 90</RotationAxis>       
             <RotationAxis>0 1 0 90</RotationAxis>    
@@ -112,7 +112,7 @@
             </Body>
 
 	    <Joint circular="false" name="leftPinkyFingerProximalJoint" type="hinge">
-            <Body>LeftFrontalWrist</Body>
+            <Body>FrontalLeftWrist</Body>
             <Body>leftPinkyFingerProximal</Body>
             <offsetfrom>leftPinkyFingerProximal</offsetfrom>
             <weight>1.0</weight>
@@ -175,7 +175,7 @@
 	<!-- Dedo anular: falange proximal (04) -->
 
 	    <Body name="leftRingFingerProximal" type="dynamic">
-            <offsetfrom>LeftFrontalWrist</offsetfrom>
+            <offsetfrom>FrontalLeftWrist</offsetfrom>
             <Translation>-0.00798 0.001 -0.211</Translation>
             <RotationAxis>1 0 0 90</RotationAxis>       
             <RotationAxis>0 1 0 90</RotationAxis> 
@@ -190,7 +190,7 @@
             </Body>
 
 	    <Joint circular="false" name="leftRingFingerProximalJoint" type="hinge">
-            <Body>LeftFrontalWrist</Body>
+            <Body>FrontalLeftWrist</Body>
             <Body>leftRingFingerProximal</Body>
             <offsetfrom>leftRingFingerProximal</offsetfrom>
             <weight>1.0</weight>
@@ -253,7 +253,7 @@
 	<!-- Dedo corazón: falange proximal (03) -->
 
 	    <Body name="leftMiddleFingerProximal" type="dynamic">
-            <offsetfrom>LeftFrontalWrist</offsetfrom>
+            <offsetfrom>FrontalLeftWrist</offsetfrom>
             <Translation>0.01154 0.001 -0.221</Translation>
             <RotationAxis>1 0 0 90</RotationAxis>       
             <RotationAxis>0 1 0 90</RotationAxis>
@@ -268,7 +268,7 @@
             </Body>
 
 	    <Joint circular="false" name="leftMiddleFingerProximalJoint" type="hinge">
-            <Body>LeftFrontalWrist</Body>
+            <Body>FrontalLeftWrist</Body>
             <Body>leftMiddleFingerProximal</Body>
             <offsetfrom>leftMiddleFingerProximal</offsetfrom>
             <weight>1.0</weight>
@@ -331,7 +331,7 @@
 	<!-- Dedo índice: falange proximal (02) -->
 
 	    <Body name="leftIndexFingerProximal" type="dynamic">
-            <offsetfrom>LeftFrontalWrist</offsetfrom>
+            <offsetfrom>FrontalLeftWrist</offsetfrom>
             <Translation>0.03106 0.001 -0.213</Translation>
             <RotationAxis>1 0 0 90</RotationAxis>       
             <RotationAxis>0 1 0 90</RotationAxis>  
@@ -346,7 +346,7 @@
             </Body>
 
 	    <Joint circular="false" name="leftIndexFingerProximalJoint" type="hinge">
-            <Body>LeftFrontalWrist</Body>
+            <Body>FrontalLeftWrist</Body>
             <Body>leftIndexFingerProximal</Body>
             <offsetfrom>leftIndexFingerProximal</offsetfrom>
             <weight>1.0</weight>
