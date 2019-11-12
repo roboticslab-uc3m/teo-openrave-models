@@ -17,12 +17,12 @@
             </Mass>
             </Body>
 
-            <Joint circular="false" name="q20" type="hinge">
+            <Joint circular="false" name="FrontalLeftShoulder" type="hinge">
             <Body>FrontalWaist</Body>
             <Body>r20</Body>
             <offsetfrom>r20</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-96.8 113.2</limitsdeg> <!-- <limitsdeg>-75 45</limitsdeg> -->
+            <limitsdeg>-96.8 113.2</limitsdeg> 
             <axis>0 1 0</axis>
             <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
@@ -41,7 +41,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="false" name="q21" type="hinge">
+            <Joint circular="false" name="SaggitalLeftShoulder" type="hinge">
             <Body>r20</Body>
             <Body>r21</Body>
             <offsetfrom>r21</offsetfrom>
@@ -65,12 +65,12 @@
             </Mass>
             </Body>
 
-            <Joint circular="false" name="q22" type="hinge">
+            <Joint circular="false" name="AxialLeftShoulder" type="hinge">
             <Body>r21</Body>
             <Body>r22</Body>
             <offsetfrom>r22</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-51.6 84.1</limitsdeg> <!-- <limitsdeg>-10 75</limitsdeg> -->
+            <limitsdeg>-51.6 84.1</limitsdeg> 
             <axis>0 0 1</axis>
             <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
@@ -89,7 +89,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="false" name="q23" type="hinge">
+            <Joint circular="false" name="FrontalLeftElbow" type="hinge">
             <Body>r22</Body>
             <Body>r23</Body>
             <offsetfrom>r23</offsetfrom>
@@ -113,7 +113,7 @@
             </Mass>
             </Body>
 
-            <Joint circular="false" name="q24" type="hinge">
+            <Joint circular="false" name="AxialLeftWrist" type="hinge">
             <Body>r23</Body>
             <Body>r24</Body>
             <offsetfrom>r24</offsetfrom>
@@ -131,12 +131,12 @@
             </Mass>   
             </Body>
 
-	 <Joint circular="false" name="LeftFrontalWristJoint" type="hinge"> 
+	 <Joint circular="false" name="FrontalLeftWrist" type="hinge"> 
 		<Body>r24</Body>
 		<Body>LeftFrontalWrist</Body>
 		<offsetfrom>LeftFrontalWrist</offsetfrom>
 		<weight>1.0</weight>
-		<limitsdeg>-113.3 61.3</limitsdeg> <!-- <limitsdeg>-10 100</limitsdeg> -->
+		<limitsdeg>-113.3 61.3</limitsdeg>
 		<axis>0 1 0</axis>
 		<maxveldeg>30</maxveldeg>
 		<resolution>1</resolution>
