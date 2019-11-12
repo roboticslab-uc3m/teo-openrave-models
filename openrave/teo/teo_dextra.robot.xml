@@ -10,7 +10,7 @@
                 <offsetfrom>r1Man</offsetfrom>
                 <translation>0 0 0.2</translation>
         </body>
-        <joint name="FrontalLeftWrist" type="hinge" enable="false">
+        <joint type="hinge" enable="false">
             <body>r1Man</body>
             <body>LeftFrontalWrist</body>
             <limits>0 0</limits>
@@ -25,7 +25,7 @@
                 <offsetfrom>r2Man</offsetfrom>
                 <translation>0 0 0.2</translation>
         </body>
-        <joint name="FrontalRightWrist" type="hinge" enable="false">
+        <joint type="hinge" enable="false">
             <body>r2Man</body>
             <body>RightFrontalWrist</body>
             <limits>0 0</limits>
