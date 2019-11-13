@@ -1,6 +1,6 @@
-<Robot name="teo_lacqueyFetch">
+<robot name="teoSim">
 
-    <robot file="teo.robot.xml"></robot>
+    <robot name="teo" file="teo.robot.xml"></robot>
 
     <robot prefix="right_" file="lacqueyFetch.robot.xml"> <!-- name="leftLacqueyFetch" -->
     </robot>
@@ -31,4 +31,4 @@
         </joint>
     </kinbody>
 
-</Robot>
+</robot>

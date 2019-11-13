@@ -1,6 +1,6 @@
-<Robot name="teo_dextra">
+<robot name="teoSim">
 
-    <robot file="teo.robot.xml"></robot>
+    <robot name="teo" file="teo.robot.xml"></robot>
 
     <robot file="leftDextra.robot.xml">
     </robot>
