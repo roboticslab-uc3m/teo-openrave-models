@@ -7,12 +7,12 @@
 
     <kinbody>
         <body name="right_FrontalWrist">
-                <offsetfrom>r1Man</offsetfrom>
+                <offsetfrom>RightArmTCP</offsetfrom>
                 <translation>0 0 0.2</translation>
                 <RotationAxis>0 0 1 90</RotationAxis>
         </body>
         <joint name="TeoToRightLacqueyFetch" type="hinge" enable="false">
-            <body>r1Man</body>
+            <body>RightArmTCP</body>
             <body>right_FrontalWrist</body>
             <limits>0 0</limits>
         </joint>
@@ -23,12 +23,12 @@
 
     <kinbody>
         <body name="left_FrontalWrist">
-                <offsetfrom>r2Man</offsetfrom>
+                <offsetfrom>LeftArmTCP</offsetfrom>
                 <translation>0 0 0.2</translation>
                 <RotationAxis>0 0 1 -90</RotationAxis>
         </body>
         <joint name="TeoToLeftLacqueyFetch" type="hinge" enable="false">
-            <body>r2Man</body>
+            <body>LeftArmTCP</body>
             <body>left_FrontalWrist</body>
             <limits>0 0</limits>
         </joint>

@@ -157,14 +157,14 @@
 	</Joint>
 
 
-	<Body name="r6Man" type="dynamic">
+	<Body name="LeftLegTCP" type="dynamic">
 	<offsetfrom>SaggitalLeftAnkle</offsetfrom>
 	<Translation>0 0 -0.123</Translation>
 	</Body>
 
 	<Joint name="q6Man" type="hinge" enable="False">
 	<Body>SaggitalLeftAnkle</Body>
-	<Body>r6Man</Body>
+	<Body>LeftLegTCP</Body>
 	<limitsdeg>0 0</limitsdeg>
 	</Joint>
 

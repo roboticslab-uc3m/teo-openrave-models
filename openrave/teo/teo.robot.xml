@@ -45,32 +45,32 @@
     </Manipulator>
 
     <Manipulator name="rightArm">
-        <effector>r1Man</effector>   <!-- last link where end effector is attached-->
+        <effector>RightArmTCP</effector>   <!-- last link where end effector is attached-->
         <base>FrontalWaist</base>           <!-- base link-->
     </Manipulator>
 
     <Manipulator name="trunkAndRightArm">
-        <effector>r1Man</effector>   <!-- last link where end effector is attached-->
+        <effector>RightArmTCP</effector>   <!-- last link where end effector is attached-->
         <base>RootWaist</base>           <!-- base link-->
     </Manipulator>
 
     <Manipulator name="leftArm">
-        <effector>r2Man</effector>   <!-- last link where end effector is attached-->
+        <effector>LeftArmTCP</effector>   <!-- last link where end effector is attached-->
         <base>FrontalWaist</base>           <!-- base link-->
     </Manipulator>
 
     <Manipulator name="trunkAndLeftArm">
-        <effector>r2Man</effector>   <!-- last link where end effector is attached-->
+        <effector>LeftArmTCP</effector>   <!-- last link where end effector is attached-->
         <base>RootWaist</base>           <!-- base link-->
     </Manipulator>
 
     <Manipulator name="rightLeg">
-        <effector>r5Man</effector>   <!-- last link where end effector is attached-->
+        <effector>RightLegTCP</effector>   <!-- last link where end effector is attached-->
         <base>RootWaist</base>           <!-- base link-->
     </Manipulator>
 
     <Manipulator name="leftLeg">
-        <effector>r6Man</effector>   <!-- last link where end effector is attached-->
+        <effector>LeftLegTCP</effector>   <!-- last link where end effector is attached-->
         <base>RootWaist</base>           <!-- base link-->
     </Manipulator>
 

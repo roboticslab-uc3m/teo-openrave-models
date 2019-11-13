@@ -154,14 +154,14 @@
         <resolution>1</resolution>
         </Joint>
 
-        <Body name="r5Man" type="dynamic">
+        <Body name="RightLegTCP" type="dynamic">
         <offsetfrom>SaggitalRightAnkle</offsetfrom>
         <Translation>0 0 -0.123</Translation>
         </Body>
 
         <Joint name="q5Man" type="hinge" enable="False">
         <Body>SaggitalRightAnkle</Body>
-        <Body>r5Man</Body>
+        <Body>RightLegTCP</Body>
         <limitsdeg>0 0</limitsdeg>
         </Joint>
 

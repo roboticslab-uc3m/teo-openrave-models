@@ -144,14 +144,14 @@
 
 	<!-- TCP (effector) -->
 
-            <Body name="r2Man" type="dynamic">
+            <Body name="LeftArmTCP" type="dynamic">
             <offsetfrom>FrontalLeftWrist</offsetfrom>
             <Translation>0 0 -0.2</Translation>
             </Body>
 
-            <Joint name="q2Man" type="hinge" enable="False">
+            <Joint name="LeftArmTCP" type="hinge" enable="False">
             <Body>FrontalLeftWrist</Body>
-            <Body>r2Man</Body>
+            <Body>LeftArmTCP</Body>
             <limitsdeg>0 0</limitsdeg>
             </Joint>
 
