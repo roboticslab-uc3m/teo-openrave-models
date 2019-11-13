@@ -1,37 +1,37 @@
-<Robot name="teo_lacqueyFetch_rotated">
+<robot name="teoSim">
 
-    <robot file="teo.robot.xml"></robot>
+    <robot name="teo" file="teo.robot.xml"></robot>
+    
+    <robot prefix="right_" file="lacqueyFetch.robot.xml"> <!-- name="leftLacqueyFetch" -->
+    </robot>
+
+    <kinbody>
+        <body name="right_FrontalWrist">
+                <offsetfrom>RightArmTCP</offsetfrom>
+                <translation>0 0 0.2</translation>
+                <RotationAxis>0 0 1 90</RotationAxis>
+        </body>
+        <joint name="TeoToRightLacqueyFetch" type="hinge" enable="false">
+            <body>RightArmTCP</body>
+            <body>right_FrontalWrist</body>
+            <limits>0 0</limits>
+        </joint>
+    </kinbody>
 
     <robot prefix="left_" file="lacqueyFetch.robot.xml">
     </robot>
 
     <kinbody>
         <body name="left_FrontalWrist">
-                <offsetfrom>r1Man</offsetfrom>
+                <offsetfrom>LeftArmTCP</offsetfrom>
                 <translation>0 0 0.2</translation>
-                <RotationAxis>0 0 1 90</RotationAxis>
+                <RotationAxis>0 0 1 -90</RotationAxis>
         </body>
         <joint name="TeoToLeftLacqueyFetch" type="hinge" enable="false">
-            <body>r1Man</body>
+            <body>LeftArmTCP</body>
             <body>left_FrontalWrist</body>
             <limits>0 0</limits>
         </joint>
     </kinbody>
 
-    <robot prefix="right_" file="lacqueyFetch.robot.xml"> <!-- name="leftLacqueyFetch" -->
-    </robot>
-
-    <kinbody>
-        <body name="right_FrontalWrist">
-                <offsetfrom>r2Man</offsetfrom>
-                <translation>0 0 0.2</translation>
-                <RotationAxis>0 0 1 -90</RotationAxis>
-        </body>
-        <joint name="TeoToRightLacqueyFetch" type="hinge" enable="false">
-            <body>r2Man</body>
-            <body>right_FrontalWrist</body>
-            <limits>0 0</limits>
-        </joint>
-    </kinbody>
-
-</Robot>
+</robot>

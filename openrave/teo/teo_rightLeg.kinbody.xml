@@ -2,7 +2,7 @@
 <!-- right leg  -->
 <KinBody name="rightLeg" makejoinedlinksadjacent="1">
 
-        <Body name="r50" type="dynamic">
+        <Body name="AxialRightHip" type="dynamic">
         <offsetfrom>RootWaist</offsetfrom>
         <Translation>0 -0.146 0</Translation>
         <RotationAxis>0 0 1 0</RotationAxis>
@@ -17,8 +17,8 @@
 
         <Joint circular="false" name="AxialRightHip" type="hinge">
         <Body>RootWaist</Body>
-        <Body>r50</Body>
-        <offsetfrom>r50</offsetfrom>
+        <Body>AxialRightHip</Body>
+        <offsetfrom>AxialRightHip</offsetfrom>
         <weight>1.0</weight>
         <limitsdeg>-32.8 27.9</limitsdeg>
         <axis>0 0 1</axis>
@@ -26,8 +26,8 @@
         <resolution>1</resolution>
         </Joint>
 
-        <Body name="r51" type="dynamic">
-        <offsetfrom>r50</offsetfrom>
+        <Body name="SaggitalRightHip" type="dynamic">
+        <offsetfrom>AxialRightHip</offsetfrom>
         <Translation>0 0 -0.092</Translation>
         <RotationAxis>0 0 1 0</RotationAxis>
         <Geom type="trimesh">
@@ -40,9 +40,9 @@
         </Body>
 
         <Joint circular="false" name="SaggitalRightHip" type="hinge">
-        <Body>r50</Body>
-        <Body>r51</Body>
-        <offsetfrom>r51</offsetfrom>
+        <Body>AxialRightHip</Body>
+        <Body>SaggitalRightHip</Body>
+        <offsetfrom>SaggitalRightHip</offsetfrom>
         <weight>1.0</weight>
         <limitsdeg>-14.2 12.5</limitsdeg>
         <axis>1 0 0</axis>
@@ -51,10 +51,10 @@
         </Joint>
 
 
-        <Body name="r52" type="dynamic">
+        <Body name="FrontalRightHip" type="dynamic">
         <Translation>0 0 0</Translation>
         <RotationAxis>0 0 1 0</RotationAxis>
-        <offsetfrom>r51</offsetfrom>
+        <offsetfrom>SaggitalRightHip</offsetfrom>
         <Geom type="trimesh">
         <Render>models/4.2^pierna_der_links.wrl</Render>
         <collision>models/4.2^pierna_der_links.wrl</collision>
@@ -65,9 +65,9 @@
         </Body>
 
         <Joint circular="false" name="FrontalRightHip" type="hinge">
-        <Body>r51</Body>
-        <Body>r52</Body>
-        <offsetfrom>r52</offsetfrom>
+        <Body>SaggitalRightHip</Body>
+        <Body>FrontalRightHip</Body>
+        <offsetfrom>FrontalRightHip</offsetfrom>
         <weight>1.0</weight>
         <limitsdeg>-31.6 42.3</limitsdeg>
         <axis>0 1 0</axis>
@@ -75,8 +75,8 @@
         <resolution>1</resolution>
         </Joint>
 
-        <Body name="r53" type="dynamic">
-        <offsetfrom>r52</offsetfrom>
+        <Body name="FrontalRightKnee" type="dynamic">
+        <offsetfrom>FrontalRightHip</offsetfrom>
         <Translation>0 0 -0.33</Translation>
         <Geom type="trimesh">
         <Render>models/4.3^pierna_der_links.wrl</Render>
@@ -88,9 +88,9 @@
         </Body>
 
         <Joint circular="false" name="FrontalRightKnee" type="hinge">
-        <Body>r52</Body>
-        <Body>r53</Body>
-        <offsetfrom>r53</offsetfrom>
+        <Body>FrontalRightHip</Body>
+        <Body>FrontalRightKnee</Body>
+        <offsetfrom>FrontalRightKnee</offsetfrom>
         <weight>1.0</weight>
         <limitsdeg>-61.3 82.4</limitsdeg>
         <axis>0 1 0</axis>
@@ -99,17 +99,17 @@
         </Joint>
 
         <Body name="r5dummy" type="dynamic">
-        <offsetfrom>r53</offsetfrom>
+        <offsetfrom>FrontalRightKnee</offsetfrom>
         <Translation>0 0.0175 -0.3</Translation>
         </Body>
 
         <Joint name="q5dummy" type="hinge" enable="False">
-        <Body>r53</Body>
+        <Body>FrontalRightKnee</Body>
         <Body>r5dummy</Body>
         <limitsdeg>0 0</limitsdeg>
         </Joint>
 
-        <Body name="r54" type="dynamic">
+        <Body name="FrontalRightAnkle" type="dynamic">
         <offsetfrom>r5dummy</offsetfrom>
         <Translation>0 0 0</Translation>
         <Geom type="trimesh">
@@ -123,8 +123,8 @@
 
         <Joint circular="false" name="FrontalRightAnkle" type="hinge">
         <Body>r5dummy</Body>
-        <Body>r54</Body>
-        <offsetfrom>r54</offsetfrom>
+        <Body>FrontalRightAnkle</Body>
+        <offsetfrom>FrontalRightAnkle</offsetfrom>
         <weight>1.0</weight>
         <limitsdeg>-23.1 25.4</limitsdeg>
         <axis>0 1 0</axis>
@@ -132,8 +132,8 @@
         <resolution>1</resolution>
         </Joint>
 
-        <Body name="r55" type="dynamic">
-        <offsetfrom>r54</offsetfrom>
+        <Body name="SaggitalRightAnkle" type="dynamic">
+        <offsetfrom>FrontalRightAnkle</offsetfrom>
         <Geom type="trimesh">
         <Render>models/4.5^pierna_der_links.wrl</Render>
         <collision>models/4.5^pierna_der_links.wrl</collision>
@@ -144,9 +144,9 @@
         </Body>
 
        <Joint circular="false" name="SaggitalRightAnkle" type="hinge">
-        <Body>r54</Body>
-        <Body>r55</Body>
-        <offsetfrom>r55</offsetfrom>
+        <Body>FrontalRightAnkle</Body>
+        <Body>SaggitalRightAnkle</Body>
+        <offsetfrom>SaggitalRightAnkle</offsetfrom>
         <weight>1.0</weight>
         <limitsdeg>-19.9 42.5</limitsdeg>
         <axis>1 0 0</axis>
@@ -154,14 +154,14 @@
         <resolution>1</resolution>
         </Joint>
 
-        <Body name="r5Man" type="dynamic">
-        <offsetfrom>r55</offsetfrom>
+        <Body name="RightLegTCP" type="dynamic">
+        <offsetfrom>SaggitalRightAnkle</offsetfrom>
         <Translation>0 0 -0.123</Translation>
         </Body>
 
         <Joint name="q5Man" type="hinge" enable="False">
-        <Body>r55</Body>
-        <Body>r5Man</Body>
+        <Body>SaggitalRightAnkle</Body>
+        <Body>RightLegTCP</Body>
         <limitsdeg>0 0</limitsdeg>
         </Joint>
 

@@ -4,7 +4,7 @@
 
         <KinBody name="leftArm" makejoinedlinksadjacent="1">
 
-            <Body name="r20" type="dynamic">
+            <Body name="FrontalLeftShoulder" type="dynamic">
             <offsetfrom>FrontalWaist</offsetfrom>
             <Translation>0 0.26292 0.305</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
@@ -19,8 +19,8 @@
 
             <Joint circular="false" name="FrontalLeftShoulder" type="hinge">
             <Body>FrontalWaist</Body>
-            <Body>r20</Body>
-            <offsetfrom>r20</offsetfrom>
+            <Body>FrontalLeftShoulder</Body>
+            <offsetfrom>FrontalLeftShoulder</offsetfrom>
             <weight>1.0</weight>
             <limitsdeg>-96.8 113.2</limitsdeg> 
             <axis>0 1 0</axis>
@@ -28,8 +28,8 @@
             <resolution>1</resolution>
             </Joint>
 
-            <Body name="r21" type="dynamic">
-            <offsetfrom>r20</offsetfrom>
+            <Body name="SaggitalLeftShoulder" type="dynamic">
+            <offsetfrom>FrontalLeftShoulder</offsetfrom>
             <Translation>0 0.084 0</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
@@ -42,9 +42,9 @@
             </Body>
 
             <Joint circular="false" name="SaggitalLeftShoulder" type="hinge">
-            <Body>r20</Body>
-            <Body>r21</Body>
-            <offsetfrom>r21</offsetfrom>
+            <Body>FrontalLeftShoulder</Body>
+            <Body>SaggitalLeftShoulder</Body>
+            <offsetfrom>SaggitalLeftShoulder</offsetfrom>
             <weight>1.0</weight>
             <limitsdeg>-23.9 76.5</limitsdeg>
             <axis>1 0 0</axis>
@@ -52,8 +52,8 @@
             <resolution>1</resolution>
             </Joint>
 
-            <Body name="r22" type="dynamic">
-            <offsetfrom>r21</offsetfrom>
+            <Body name="AxialLeftShoulder" type="dynamic">
+            <offsetfrom>SaggitalLeftShoulder</offsetfrom>
             <Translation>0 0 -0.329</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
@@ -66,9 +66,9 @@
             </Body>
 
             <Joint circular="false" name="AxialLeftShoulder" type="hinge">
-            <Body>r21</Body>
-            <Body>r22</Body>
-            <offsetfrom>r22</offsetfrom>
+            <Body>SaggitalLeftShoulder</Body>
+            <Body>AxialLeftShoulder</Body>
+            <offsetfrom>AxialLeftShoulder</offsetfrom>
             <weight>1.0</weight>
             <limitsdeg>-51.6 84.1</limitsdeg> 
             <axis>0 0 1</axis>
@@ -76,8 +76,8 @@
             <resolution>1</resolution>
             </Joint>
 
-            <Body name="r23" type="dynamic">
-            <offsetfrom>r22</offsetfrom>
+            <Body name="FrontalLeftElbow" type="dynamic">
+            <offsetfrom>AxialLeftShoulder</offsetfrom>
             <Translation>0 0 0</Translation>
             <RotationAxis>0 1 0 0</RotationAxis>
             <Geom type="trimesh">
@@ -90,9 +90,9 @@
             </Body>
 
             <Joint circular="false" name="FrontalLeftElbow" type="hinge">
-            <Body>r22</Body>
-            <Body>r23</Body>
-            <offsetfrom>r23</offsetfrom>
+            <Body>AxialLeftShoulder</Body>
+            <Body>FrontalLeftElbow</Body>
+            <offsetfrom>FrontalLeftElbow</offsetfrom>
             <weight>1.0</weight>
             <limitsdeg>-101.1 96.8</limitsdeg>
             <axis>0 1 0</axis>
@@ -100,8 +100,8 @@
             <resolution>1</resolution>
             </Joint>
 
-            <Body name="r24" type="dynamic">
-            <offsetfrom>r23</offsetfrom>
+            <Body name="AxialLeftWrist" type="dynamic">
+            <offsetfrom>FrontalLeftElbow</offsetfrom>
             <Translation>0 0 -0.202</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
@@ -114,9 +114,9 @@
             </Body>
 
             <Joint circular="false" name="AxialLeftWrist" type="hinge">
-            <Body>r23</Body>
-            <Body>r24</Body>
-            <offsetfrom>r24</offsetfrom>
+            <Body>FrontalLeftElbow</Body>
+            <Body>AxialLeftWrist</Body>
+            <offsetfrom>AxialLeftWrist</offsetfrom>
             <weight>1.0</weight>
             <limitsdeg>-101.3 76.4</limitsdeg>
             <axis>0 0 1</axis>
@@ -124,17 +124,17 @@
             <resolution>1</resolution>
             </Joint>
 
-	    <Body name="LeftFrontalWrist" type="dynamic">
-            <offsetfrom>r24</offsetfrom> 
+	    <Body name="FrontalLeftWrist" type="dynamic">
+            <offsetfrom>AxialLeftWrist</offsetfrom> 
             <Mass type="custom">
               <density>1</density>
             </Mass>   
             </Body>
 
 	 <Joint circular="false" name="FrontalLeftWrist" type="hinge"> 
-		<Body>r24</Body>
-		<Body>LeftFrontalWrist</Body>
-		<offsetfrom>LeftFrontalWrist</offsetfrom>
+		<Body>AxialLeftWrist</Body>
+		<Body>FrontalLeftWrist</Body>
+		<offsetfrom>FrontalLeftWrist</offsetfrom>
 		<weight>1.0</weight>
 		<limitsdeg>-113.3 61.3</limitsdeg>
 		<axis>0 1 0</axis>
@@ -144,14 +144,14 @@
 
 	<!-- TCP (effector) -->
 
-            <Body name="r2Man" type="dynamic">
-            <offsetfrom>LeftFrontalWrist</offsetfrom>
+            <Body name="LeftArmTCP" type="dynamic">
+            <offsetfrom>FrontalLeftWrist</offsetfrom>
             <Translation>0 0 -0.2</Translation>
             </Body>
 
-            <Joint name="q2Man" type="hinge" enable="False">
-            <Body>LeftFrontalWrist</Body>
-            <Body>r2Man</Body>
+            <Joint name="LeftArmTCP" type="hinge" enable="False">
+            <Body>FrontalLeftWrist</Body>
+            <Body>LeftArmTCP</Body>
             <limitsdeg>0 0</limitsdeg>
             </Joint>
 
