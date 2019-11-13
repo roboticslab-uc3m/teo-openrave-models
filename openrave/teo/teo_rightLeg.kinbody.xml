@@ -7,8 +7,8 @@
         <Translation>0 -0.146 0</Translation>
         <RotationAxis>0 0 1 0</RotationAxis>
         <Geom type="trimesh">
-        <Render>models/4.0^pierna_der_links.wrl</Render>
-        <collision>models/4.0^pierna_der_links.wrl</collision>
+        <Render>models/AxialRightHip.wrl</Render>
+        <collision>models/AxialRightHip.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -31,8 +31,8 @@
         <Translation>0 0 -0.092</Translation>
         <RotationAxis>0 0 1 0</RotationAxis>
         <Geom type="trimesh">
-        <Render>models/4.1^pierna_der_links.wrl</Render>
-        <collision>models/4.1^pierna_der_links.wrl</collision>
+        <Render>models/SaggitalRightHip.wrl</Render>
+        <collision>models/SaggitalRightHip.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -56,8 +56,8 @@
         <RotationAxis>0 0 1 0</RotationAxis>
         <offsetfrom>SaggitalRightHip</offsetfrom>
         <Geom type="trimesh">
-        <Render>models/4.2^pierna_der_links.wrl</Render>
-        <collision>models/4.2^pierna_der_links.wrl</collision>
+        <Render>models/FrontalRightHip.wrl</Render>
+        <collision>models/FrontalRightHip.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -79,8 +79,8 @@
         <offsetfrom>FrontalRightHip</offsetfrom>
         <Translation>0 0 -0.33</Translation>
         <Geom type="trimesh">
-        <Render>models/4.3^pierna_der_links.wrl</Render>
-        <collision>models/4.3^pierna_der_links.wrl</collision>
+        <Render>models/FrontalRightKnee.wrl</Render>
+        <collision>models/FrontalRightKnee.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -113,8 +113,8 @@
         <offsetfrom>r5dummy</offsetfrom>
         <Translation>0 0 0</Translation>
         <Geom type="trimesh">
-        <Render>models/4.4^pierna_der_links.wrl</Render>
-        <collision>models/4.4^pierna_der_links.wrl</collision>
+        <Render>models/FrontalRightAnkle.wrl</Render>
+        <collision>models/FrontalRightAnkle.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -135,8 +135,8 @@
         <Body name="SaggitalRightAnkle" type="dynamic">
         <offsetfrom>FrontalRightAnkle</offsetfrom>
         <Geom type="trimesh">
-        <Render>models/4.5^pierna_der_links.wrl</Render>
-        <collision>models/4.5^pierna_der_links.wrl</collision>
+        <Render>models/SaggitalRightAnkle.wrl</Render>
+        <collision>models/SaggitalRightAnkle.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>10</density>
