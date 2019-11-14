@@ -1,8 +1,8 @@
 <robot name="teoSim">
 
-    <robot name="teo" file="teo.robot.xml"></robot>
+    <robot name="teo" file="teo/teo.robot.xml"></robot>
 
-    <robot prefix="right_" file="lacqueyFetch.robot.xml"> <!-- name="leftLacqueyFetch" -->
+    <robot prefix="right_" file="lacqueyFetch/lacqueyFetch.robot.xml"> <!-- name="leftLacqueyFetch" -->
     </robot>
 
     <kinbody>
@@ -17,7 +17,7 @@
         </joint>
     </kinbody>
 
-    <robot prefix="left_" file="lacqueyFetch.robot.xml">
+    <robot prefix="left_" file="lacqueyFetch/lacqueyFetch.robot.xml">
     </robot>    
     <kinbody>
         <body name="left_FrontalWrist">
