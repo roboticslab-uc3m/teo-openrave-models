@@ -5,8 +5,8 @@
 	    <Body name="FrontalWrist" type="dynamic">
              <Translation>0 0 0</Translation>
              <Geom type="trimesh">
-              <Render>models/lacqueyFetch/hand_frontal_wrist.wrl 0.001</Render> 
-              <collision>models/lacqueyFetch/hand_frontal_wrist.wrl 0.001</collision>
+              <Render>models/lacqueyFetch/FrontalWrist.wrl 0.001</Render> 
+              <collision>models/lacqueyFetch/FrontalWrist.wrl 0.001</collision>
              </Geom>
              <Mass type="custom">
               <density>1</density>
@@ -19,8 +19,8 @@
             <offsetfrom>FrontalWrist</offsetfrom>
             <Translation>0.027472302 0 -0.164588951</Translation>            
             <Geom type="trimesh">
-            <Render>models/lacqueyFetch/hand_phalange_proximal.wrl 0.001</Render>
-            <collision>models/lacqueyFetch/hand_phalange_proximal.wrl 0.001</collision>
+            <Render>models/lacqueyFetch/PhalangeProximal.wrl 0.001</Render>
+            <collision>models/lacqueyFetch/PhalangeProximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -46,8 +46,8 @@
             <offsetfrom>ThumbProximal</offsetfrom>
             <Translation>0.027 0 -0.047</Translation>	                
             <Geom type="trimesh">
-            <Render>models/lacqueyFetch/hand_phalange_distal.wrl 0.001</Render>
-            <collision>models/lacqueyFetch/hand_phalange_distal.wrl 0.001</collision>
+            <Render>models/lacqueyFetch/PhalangeDistal.wrl 0.001</Render>
+            <collision>models/lacqueyFetch/PhalangeDistal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -72,8 +72,8 @@
             <Translation>-0.02852741 -0.02010339 -0.164409358</Translation>
             <RotationAxis>0 0 1 180</RotationAxis>            
             <Geom type="trimesh">
-            <Render>models/lacqueyFetch/hand_phalange_proximal.wrl 0.001</Render>
-            <collision>models/lacqueyFetch/hand_phalange_proximal.wrl 0.001</collision>
+            <Render>models/lacqueyFetch/PhalangeProximal.wrl 0.001</Render>
+            <collision>models/lacqueyFetch/PhalangeProximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -97,8 +97,8 @@
             <offsetfrom>ExternalFingerProximal</offsetfrom>
             <Translation>0.027 0.0 -0.047</Translation>
             <Geom type="trimesh">
-            <Render>models/lacqueyFetch/hand_phalange_distal.wrl 0.001</Render>
-            <collision>models/lacqueyFetch/hand_phalange_distal.wrl 0.001</collision>
+            <Render>models/lacqueyFetch/PhalangeDistal.wrl 0.001</Render>
+            <collision>models/lacqueyFetch/PhalangeDistal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -123,8 +123,8 @@
             <Translation>-0.02852741 0.02010339 -0.164409358</Translation>
             <RotationAxis>0 0 1 180</RotationAxis>            
             <Geom type="trimesh">
-            <Render>models/lacqueyFetch/hand_phalange_proximal.wrl 0.001</Render>
-            <collision>models/lacqueyFetch/hand_phalange_proximal.wrl 0.001</collision>
+            <Render>models/lacqueyFetch/PhalangeProximal.wrl 0.001</Render>
+            <collision>models/lacqueyFetch/PhalangeProximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -148,8 +148,8 @@
             <offsetfrom>InternalFingerProximal</offsetfrom>
             <Translation>0.027 0.0 -0.047</Translation>           
             <Geom type="trimesh">
-            <Render>models/lacqueyFetch/hand_phalange_distal.wrl 0.001</Render>
-            <collision>models/lacqueyFetch/hand_phalange_distal.wrl 0.001</collision>
+            <Render>models/lacqueyFetch/PhalangeDistal.wrl 0.001</Render>
+            <collision>models/lacqueyFetch/PhalangeDistal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
