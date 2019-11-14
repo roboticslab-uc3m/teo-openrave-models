@@ -1,8 +1,8 @@
 <robot name="teoSim">
 
-    <robot name="teo" file="teo.robot.xml"></robot>
+    <robot name="teo" file="teo/teo.robot.xml"></robot>
 
-    <robot file="leftDextra.robot.xml">
+    <robot file="dextra/leftDextra.robot.xml">
     </robot>
 
     <kinbody>
@@ -17,7 +17,7 @@
         </joint>
     </kinbody>
 
-    <robot file="rightDextra.robot.xml">
+    <robot file="dextra/rightDextra.robot.xml">
     </robot>
 
     <kinbody>
