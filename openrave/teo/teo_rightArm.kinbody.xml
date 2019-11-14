@@ -9,8 +9,8 @@
             <Translation>0 -0.26292 0.305</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
-            <Render>models/1.0^brazo_derecho_links.wrl</Render>
-            <collision>models/1.0^brazo_derecho_links.wrl</collision>
+            <Render>models/teo/FrontalRightShoulder.wrl</Render>
+            <collision>models/teo/FrontalRightShoulder.wrl</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -33,8 +33,8 @@
             <Translation>0 -0.084 0</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
-            <Render>models/1.1^brazo_derecho_links.wrl</Render>
-            <collision>models/1.1^brazo_derecho_links.wrl</collision>
+            <Render>models/teo/SaggitalRightShoulder.wrl</Render>
+            <collision>models/teo/SaggitalRightShoulder.wrl</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -57,8 +57,8 @@
             <Translation>0 0 -0.329</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
-            <Render>models/1.2^brazo_derecho_links.wrl</Render>
-            <collision>models/1.2^brazo_derecho_links.wrl</collision>
+            <Render>models/teo/AxialRightShoulder.wrl</Render>
+            <collision>models/teo/AxialRightShoulder.wrl</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -81,8 +81,8 @@
             <Translation>0 0 0</Translation>
             <RotationAxis>0 1 0 0</RotationAxis>
             <Geom type="trimesh">
-            <Render>models/1.3^brazo_derecho_links.wrl</Render>
-            <collision>models/1.3^brazo_derecho_links.wrl</collision>
+            <Render>models/teo/FrontalRightElbow.wrl</Render>
+            <collision>models/teo/FrontalRightElbow.wrl</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -104,8 +104,8 @@
             <offsetfrom>FrontalRightElbow</offsetfrom>
             <Translation>0 0 -0.202</Translation>
             <Geom type="trimesh">
-            <Render>models/1.4^brazo_derecho_links.wrl</Render>
-            <collision>models/1.4^brazo_derecho_links.wrl</collision>
+            <Render>models/teo/AxialRightWrist.wrl</Render>
+            <collision>models/teo/AxialRightWrist.wrl</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
