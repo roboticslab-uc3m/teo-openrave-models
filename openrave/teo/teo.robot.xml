@@ -5,8 +5,8 @@
             <Geom type="trimesh">
                 <Translation>0 0 0</Translation>
                 <rotationaxis>0 0 1 0</rotationaxis>
-                <Render>models/RootWaist_links.wrl</Render>
-                <collision>models/RootWaist_links.wrl</collision>
+                <Render>models/teo/RootWaist_links.wrl</Render>
+                <collision>models/teo/RootWaist_links.wrl</collision>
             </Geom>
             <Mass type="custom">
                 <density>1</density>
