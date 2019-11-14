@@ -5,8 +5,8 @@
 	    <Body name="FrontalLeftWrist" type="dynamic"> 
              <Translation>0 0 0</Translation>              
              <Geom type="trimesh">
-              <Render>models/dextra/7.1^manoizq_static_links.wrl 0.001</Render> 
-              <collision>models/dextra/7.1^manoizq_static_links.wrl 0.001</collision>
+              <Render>models/dextra/LeftStaticLinks.wrl 0.001</Render> 
+              <collision>models/dextra/LeftStaticLinks.wrl 0.001</collision>
              </Geom>
              <Mass type="custom">
               <density>1</density>
@@ -20,8 +20,8 @@
             <Translation>0.026 -0.0126 -0.112</Translation>    
 	    <RotationAxis>-1 0 0 90</RotationAxis>         
             <Geom type="trimesh">
-            <Render>models/dextra/6.2^mano_abductor_links.wrl 0.001</Render>
-            <collision>models/dextra/6.2^mano_abductor_links.wrl 0.001</collision>
+            <Render>models/dextra/Abductor_2.wrl 0.001</Render>
+            <collision>models/dextra/Abductor_2.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -49,8 +49,8 @@
             <RotationAxis>0 0 1 90</RotationAxis>     
             <RotationAxis>0 1 0 90</RotationAxis>       
             <Geom type="trimesh">
-            <Render>models/dextra/6.6^mano_proximalthumb_links.wrl 0.001</Render>
-            <collision>models/dextra/6.6^mano_proximalthumb_links.wrl 0.001</collision>
+            <Render>models/dextra/ProximalThumb.wrl 0.001</Render>
+            <collision>models/dextra/ProximalThumb.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -75,8 +75,8 @@
             <offsetfrom>leftThumbProximal</offsetfrom>
             <Translation>0.03 0 0</Translation>	                
             <Geom type="trimesh">
-            <Render>models/dextra/6.7^mano_distalthumb_links.wrl 0.001</Render>
-            <collision>models/dextra/6.7^mano_distalthumb_links.wrl 0.001</collision>
+            <Render>models/dextra/DistalThumb.wrl 0.001</Render>
+            <collision>models/dextra/DistalThumb.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -103,8 +103,8 @@
             <RotationAxis>0 1 0 90</RotationAxis>    
             <RotationAxis>0 0 1 180</RotationAxis>   
             <Geom type="trimesh">
-            <Render>models/dextra/6.3^mano_proximal_links.wrl 0.001</Render>
-            <collision>models/dextra/6.3^mano_proximal_links.wrl 0.001</collision>
+            <Render>models/dextra/Proximal.wrl 0.001</Render>
+            <collision>models/dextra/Proximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -128,8 +128,8 @@
             <offsetfrom>leftPinkyFingerProximal</offsetfrom>
             <Translation>0.035 0 0</Translation>
             <Geom type="trimesh">
-            <Render>models/dextra/6.4^mano_middle_links.wrl 0.001</Render>
-            <collision>models/dextra/6.4^mano_middle_links.wrl 0.001</collision>
+            <Render>models/dextra/Middle.wrl 0.001</Render>
+            <collision>models/dextra/Middle.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -153,8 +153,8 @@
             <offsetfrom>leftPinkyFingerMiddle</offsetfrom>
             <Translation>0.025 0 0</Translation>
             <Geom type="trimesh">
-            <Render>models/dextra/6.5^mano_distal_links.wrl 0.001</Render>
-            <collision>models/dextra/6.5^mano_distal_links.wrl 0.001</collision>
+            <Render>models/dextra/Distal.wrl 0.001</Render>
+            <collision>models/dextra/Distal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -181,8 +181,8 @@
             <RotationAxis>0 1 0 90</RotationAxis> 
             <RotationAxis>0 0 1 180</RotationAxis>                
             <Geom type="trimesh">
-            <Render>models/dextra/6.3^mano_proximal_links.wrl 0.001</Render>
-            <collision>models/dextra/6.3^mano_proximal_links.wrl 0.001</collision>
+            <Render>models/dextra/Proximal.wrl 0.001</Render>
+            <collision>models/dextra/Proximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -206,8 +206,8 @@
             <offsetfrom>leftRingFingerProximal</offsetfrom>
             <Translation>0.035 0 0</Translation>
             <Geom type="trimesh">
-            <Render>models/dextra/6.4^mano_middle_links.wrl 0.001</Render>
-            <collision>models/dextra/6.4^mano_middle_links.wrl 0.001</collision>
+            <Render>models/dextra/Middle.wrl 0.001</Render>
+            <collision>models/dextra/Middle.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -231,8 +231,8 @@
             <offsetfrom>leftRingFingerMiddle</offsetfrom>
             <Translation>0.025 0 0</Translation>
             <Geom type="trimesh">
-            <Render>models/dextra/6.5^mano_distal_links.wrl 0.001</Render>
-            <collision>models/dextra/6.5^mano_distal_links.wrl 0.001</collision>
+            <Render>models/dextra/Distal.wrl 0.001</Render>
+            <collision>models/dextra/Distal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -259,8 +259,8 @@
             <RotationAxis>0 1 0 90</RotationAxis>
             <RotationAxis>0 0 1 180</RotationAxis>               
             <Geom type="trimesh">
-            <Render>models/dextra/6.3^mano_proximal_links.wrl 0.001</Render>
-            <collision>models/dextra/6.3^mano_proximal_links.wrl 0.001</collision>
+            <Render>models/dextra/Proximal.wrl 0.001</Render>
+            <collision>models/dextra/Proximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -284,8 +284,8 @@
             <offsetfrom>leftMiddleFingerProximal</offsetfrom>
             <Translation>0.035 0 0</Translation>
             <Geom type="trimesh">
-            <Render>models/dextra/6.4^mano_middle_links.wrl 0.001</Render>
-            <collision>models/dextra/6.4^mano_middle_links.wrl 0.001</collision>
+            <Render>models/dextra/Middle.wrl 0.001</Render>
+            <collision>models/dextra/Middle.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -309,8 +309,8 @@
             <offsetfrom>leftMiddleFingerMiddle</offsetfrom>
             <Translation>0.025 0 0</Translation>
             <Geom type="trimesh">
-            <Render>models/dextra/6.5^mano_distal_links.wrl 0.001</Render>
-            <collision>models/dextra/6.5^mano_distal_links.wrl 0.001</collision>
+            <Render>models/dextra/Distal.wrl 0.001</Render>
+            <collision>models/dextra/Distal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -337,8 +337,8 @@
             <RotationAxis>0 1 0 90</RotationAxis>  
             <RotationAxis>0 0 1 180</RotationAxis>             
             <Geom type="trimesh">
-            <Render>models/dextra/6.3^mano_proximal_links.wrl 0.001</Render>
-            <collision>models/dextra/6.3^mano_proximal_links.wrl 0.001</collision>
+            <Render>models/dextra/Proximal.wrl 0.001</Render>
+            <collision>models/dextra/Proximal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -362,8 +362,8 @@
             <offsetfrom>leftIndexFingerProximal</offsetfrom>
             <Translation>0.035 0 0</Translation>
             <Geom type="trimesh">
-            <Render>models/dextra/6.4^mano_middle_links.wrl 0.001</Render>
-            <collision>models/dextra/6.4^mano_middle_links.wrl 0.001</collision>
+            <Render>models/dextra/Middle.wrl 0.001</Render>
+            <collision>models/dextra/Middle.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -387,8 +387,8 @@
             <offsetfrom>leftIndexFingerMiddle</offsetfrom>
             <Translation>0.025 0 0</Translation>
             <Geom type="trimesh">
-            <Render>models/dextra/6.5^mano_distal_links.wrl 0.001</Render>
-            <collision>models/dextra/6.5^mano_distal_links.wrl 0.001</collision>
+            <Render>models/dextra/Distal.wrl 0.001</Render>
+            <collision>models/dextra/Distal.wrl 0.001</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
