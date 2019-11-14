@@ -8,8 +8,8 @@
             <offsetfrom>FrontalWaist</offsetfrom>
             <Translation>0 0 0.435</Translation>
             <Geom type="trimesh">
-            <Render>models/teo/AxialNeck.wrl</Render>
-            <collision>models/teo/AxialNeck.wrl</collision>
+            <Render>wrls/AxialNeck.wrl</Render>
+            <collision>wrls/AxialNeck.wrl</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
@@ -32,8 +32,8 @@
             <offsetfrom>AxialNeck</offsetfrom>
             <Translation>0 0 0.0325</Translation>
             <Geom type="trimesh">
-            <Render>models/teo/FrontalNeck.wrl</Render>
-            <collision>models/teo/FrontalNeck.wrl</collision>
+            <Render>wrls/FrontalNeck.wrl</Render>
+            <collision>wrls/FrontalNeck.wrl</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>

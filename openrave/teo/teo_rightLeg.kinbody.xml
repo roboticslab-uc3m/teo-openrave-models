@@ -7,8 +7,8 @@
         <Translation>0 -0.146 0</Translation>
         <RotationAxis>0 0 1 0</RotationAxis>
         <Geom type="trimesh">
-        <Render>models/teo/AxialRightHip.wrl</Render>
-        <collision>models/teo/AxialRightHip.wrl</collision>
+        <Render>wrls/AxialRightHip.wrl</Render>
+        <collision>wrls/AxialRightHip.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -31,8 +31,8 @@
         <Translation>0 0 -0.092</Translation>
         <RotationAxis>0 0 1 0</RotationAxis>
         <Geom type="trimesh">
-        <Render>models/teo/SaggitalRightHip.wrl</Render>
-        <collision>models/teo/SaggitalRightHip.wrl</collision>
+        <Render>wrls/SaggitalRightHip.wrl</Render>
+        <collision>wrls/SaggitalRightHip.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -56,8 +56,8 @@
         <RotationAxis>0 0 1 0</RotationAxis>
         <offsetfrom>SaggitalRightHip</offsetfrom>
         <Geom type="trimesh">
-        <Render>models/teo/FrontalRightHip.wrl</Render>
-        <collision>models/teo/FrontalRightHip.wrl</collision>
+        <Render>wrls/FrontalRightHip.wrl</Render>
+        <collision>wrls/FrontalRightHip.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -79,8 +79,8 @@
         <offsetfrom>FrontalRightHip</offsetfrom>
         <Translation>0 0 -0.33</Translation>
         <Geom type="trimesh">
-        <Render>models/teo/FrontalRightKnee.wrl</Render>
-        <collision>models/teo/FrontalRightKnee.wrl</collision>
+        <Render>wrls/FrontalRightKnee.wrl</Render>
+        <collision>wrls/FrontalRightKnee.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -113,8 +113,8 @@
         <offsetfrom>r5dummy</offsetfrom>
         <Translation>0 0 0</Translation>
         <Geom type="trimesh">
-        <Render>models/teo/FrontalRightAnkle.wrl</Render>
-        <collision>models/teo/FrontalRightAnkle.wrl</collision>
+        <Render>wrls/FrontalRightAnkle.wrl</Render>
+        <collision>wrls/FrontalRightAnkle.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
@@ -135,8 +135,8 @@
         <Body name="SaggitalRightAnkle" type="dynamic">
         <offsetfrom>FrontalRightAnkle</offsetfrom>
         <Geom type="trimesh">
-        <Render>models/teo/SaggitalRightAnkle.wrl</Render>
-        <collision>models/teo/SaggitalRightAnkle.wrl</collision>
+        <Render>wrls/SaggitalRightAnkle.wrl</Render>
+        <collision>wrls/SaggitalRightAnkle.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>10</density>
