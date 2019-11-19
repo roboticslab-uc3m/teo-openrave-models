@@ -28,22 +28,22 @@
 	<resolution>1</resolution>
 	</Joint>
 
-	<Body name="SaggitalLeftHip" type="dynamic">
+	<Body name="SagittalLeftHip" type="dynamic">
 	<offsetfrom>AxialLeftHip</offsetfrom>
 	<Translation>0 0 -0.092</Translation>
 	<Geom type="trimesh">
-	<Render>wrls/SaggitalLeftHip.wrl</Render>
-	<collision>wrls/SaggitalLeftHip.wrl</collision>
+	<Render>wrls/SagittalLeftHip.wrl</Render>
+	<collision>wrls/SagittalLeftHip.wrl</collision>
 	</Geom>
 	<Mass type="custom">
 	<density>1</density>
 	</Mass>
 	</Body>
 
-	<Joint circular="false" name="SaggitalLeftHip" type="hinge">
+	<Joint circular="false" name="SagittalLeftHip" type="hinge">
 	<Body>AxialLeftHip</Body>
-	<Body>SaggitalLeftHip</Body>
-	<offsetfrom>SaggitalLeftHip</offsetfrom>
+	<Body>SagittalLeftHip</Body>
+	<offsetfrom>SagittalLeftHip</offsetfrom>
 	<weight>1.0</weight>
 	<limitsdeg>-12.5 14.2</limitsdeg>
 	<axis>1 0 0</axis>
@@ -54,7 +54,7 @@
 
 	<Body name="FrontalLeftHip" type="dynamic">
 	<Translation>0 0 0</Translation>
-	<offsetfrom>SaggitalLeftHip</offsetfrom>
+	<offsetfrom>SagittalLeftHip</offsetfrom>
 	<Geom type="trimesh">
 	<Render>wrls/FrontalLeftHip.wrl</Render>
 	<collision>wrls/FrontalLeftHip.wrl</collision>
@@ -65,7 +65,7 @@
 	</Body>
 
 	<Joint circular="false" name="FrontalLeftHip" type="hinge">
-	<Body>SaggitalLeftHip</Body>
+	<Body>SagittalLeftHip</Body>
 	<Body>FrontalLeftHip</Body>
 	<offsetfrom>FrontalLeftHip</offsetfrom>
 	<weight>1.0</weight>
@@ -134,21 +134,21 @@
 	<resolution>1</resolution>
 	</Joint>
 
-	<Body name="SaggitalLeftAnkle" type="dynamic">
+	<Body name="SagittalLeftAnkle" type="dynamic">
 	<offsetfrom>FrontalLeftAnkle</offsetfrom>
 	<Geom type="trimesh">
-	<Render>wrls/SaggitalLeftAnkle.wrl</Render>
-	<collision>wrls/SaggitalLeftAnkle.wrl</collision>
+	<Render>wrls/SagittalLeftAnkle.wrl</Render>
+	<collision>wrls/SagittalLeftAnkle.wrl</collision>
 	</Geom>
 	<Mass type="custom">
 	<density>1</density>
 	</Mass>
 	</Body>
 
-	<Joint circular="false" name="SaggitalLeftAnkle" type="hinge">
+	<Joint circular="false" name="SagittalLeftAnkle" type="hinge">
 	<Body>FrontalLeftAnkle</Body>
-	<Body>SaggitalLeftAnkle</Body>
-	<offsetfrom>SaggitalLeftAnkle</offsetfrom>
+	<Body>SagittalLeftAnkle</Body>
+	<offsetfrom>SagittalLeftAnkle</offsetfrom>
 	<weight>1.0</weight>
 	<limitsdeg>-42.5 19.9</limitsdeg>
 	<axis>1 0 0</axis>
@@ -158,12 +158,12 @@
 
 
 	<Body name="LeftLegTCP" type="dynamic">
-	<offsetfrom>SaggitalLeftAnkle</offsetfrom>
+	<offsetfrom>SagittalLeftAnkle</offsetfrom>
 	<Translation>0 0 -0.123</Translation>
 	</Body>
 
 	<Joint name="q6Man" type="hinge" enable="False">
-	<Body>SaggitalLeftAnkle</Body>
+	<Body>SagittalLeftAnkle</Body>
 	<Body>LeftLegTCP</Body>
 	<limitsdeg>0 0</limitsdeg>
 	</Joint>

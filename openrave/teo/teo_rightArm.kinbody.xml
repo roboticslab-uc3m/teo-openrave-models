@@ -28,23 +28,23 @@
             <resolution>1</resolution>
             </Joint>
 
-	    <Body name="SaggitalRightShoulder" type="dynamic">
+	    <Body name="SagittalRightShoulder" type="dynamic">
             <offsetfrom>FrontalRightShoulder</offsetfrom>
             <Translation>0 -0.084 0</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
-            <Render>wrls/SaggitalRightShoulder.wrl</Render>
-            <collision>wrls/SaggitalRightShoulder.wrl</collision>
+            <Render>wrls/SagittalRightShoulder.wrl</Render>
+            <collision>wrls/SagittalRightShoulder.wrl</collision>
             </Geom>
             <Mass type="custom">
               <density>1</density>
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="SaggitalRightShoulder" type="hinge">
+	    <Joint circular="false" name="SagittalRightShoulder" type="hinge">
             <Body>FrontalRightShoulder</Body>
-            <Body>SaggitalRightShoulder</Body>
-            <offsetfrom>SaggitalRightShoulder</offsetfrom>
+            <Body>SagittalRightShoulder</Body>
+            <offsetfrom>SagittalRightShoulder</offsetfrom>
             <weight>1.0</weight>
             <limitsdeg>-75.5 22.4</limitsdeg>
             <axis>1 0 0</axis>
@@ -53,7 +53,7 @@
             </Joint>
 
 	    <Body name="AxialRightShoulder" type="dynamic">
-            <offsetfrom>SaggitalRightShoulder</offsetfrom>
+            <offsetfrom>SagittalRightShoulder</offsetfrom>
             <Translation>0 0 -0.329</Translation>
             <RotationAxis>0 0 1 0</RotationAxis>
             <Geom type="trimesh">
@@ -66,7 +66,7 @@
             </Body>
 
 	    <Joint circular="false" name="AxialRightShoulder" type="hinge">
-            <Body>SaggitalRightShoulder</Body>
+            <Body>SagittalRightShoulder</Body>
             <Body>AxialRightShoulder</Body>
             <offsetfrom>AxialRightShoulder</offsetfrom>
             <weight>1.0</weight>
