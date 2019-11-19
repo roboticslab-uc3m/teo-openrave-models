@@ -26,23 +26,23 @@
         <resolution>1</resolution>
         </Joint>
 
-        <Body name="SaggitalRightHip" type="dynamic">
+        <Body name="SagittalRightHip" type="dynamic">
         <offsetfrom>AxialRightHip</offsetfrom>
         <Translation>0 0 -0.092</Translation>
         <RotationAxis>0 0 1 0</RotationAxis>
         <Geom type="trimesh">
-        <Render>wrls/SaggitalRightHip.wrl</Render>
-        <collision>wrls/SaggitalRightHip.wrl</collision>
+        <Render>wrls/SagittalRightHip.wrl</Render>
+        <collision>wrls/SagittalRightHip.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>1</density>
         </Mass>
         </Body>
 
-        <Joint circular="false" name="SaggitalRightHip" type="hinge">
+        <Joint circular="false" name="SagittalRightHip" type="hinge">
         <Body>AxialRightHip</Body>
-        <Body>SaggitalRightHip</Body>
-        <offsetfrom>SaggitalRightHip</offsetfrom>
+        <Body>SagittalRightHip</Body>
+        <offsetfrom>SagittalRightHip</offsetfrom>
         <weight>1.0</weight>
         <limitsdeg>-14.2 12.5</limitsdeg>
         <axis>1 0 0</axis>
@@ -54,7 +54,7 @@
         <Body name="FrontalRightHip" type="dynamic">
         <Translation>0 0 0</Translation>
         <RotationAxis>0 0 1 0</RotationAxis>
-        <offsetfrom>SaggitalRightHip</offsetfrom>
+        <offsetfrom>SagittalRightHip</offsetfrom>
         <Geom type="trimesh">
         <Render>wrls/FrontalRightHip.wrl</Render>
         <collision>wrls/FrontalRightHip.wrl</collision>
@@ -65,7 +65,7 @@
         </Body>
 
         <Joint circular="false" name="FrontalRightHip" type="hinge">
-        <Body>SaggitalRightHip</Body>
+        <Body>SagittalRightHip</Body>
         <Body>FrontalRightHip</Body>
         <offsetfrom>FrontalRightHip</offsetfrom>
         <weight>1.0</weight>
@@ -132,21 +132,21 @@
         <resolution>1</resolution>
         </Joint>
 
-        <Body name="SaggitalRightAnkle" type="dynamic">
+        <Body name="SagittalRightAnkle" type="dynamic">
         <offsetfrom>FrontalRightAnkle</offsetfrom>
         <Geom type="trimesh">
-        <Render>wrls/SaggitalRightAnkle.wrl</Render>
-        <collision>wrls/SaggitalRightAnkle.wrl</collision>
+        <Render>wrls/SagittalRightAnkle.wrl</Render>
+        <collision>wrls/SagittalRightAnkle.wrl</collision>
         </Geom>
         <Mass type="custom">
           <density>10</density>
         </Mass>
         </Body>
 
-       <Joint circular="false" name="SaggitalRightAnkle" type="hinge">
+       <Joint circular="false" name="SagittalRightAnkle" type="hinge">
         <Body>FrontalRightAnkle</Body>
-        <Body>SaggitalRightAnkle</Body>
-        <offsetfrom>SaggitalRightAnkle</offsetfrom>
+        <Body>SagittalRightAnkle</Body>
+        <offsetfrom>SagittalRightAnkle</offsetfrom>
         <weight>1.0</weight>
         <limitsdeg>-19.9 42.5</limitsdeg>
         <axis>1 0 0</axis>
@@ -155,12 +155,12 @@
         </Joint>
 
         <Body name="RightLegTCP" type="dynamic">
-        <offsetfrom>SaggitalRightAnkle</offsetfrom>
+        <offsetfrom>SagittalRightAnkle</offsetfrom>
         <Translation>0 0 -0.123</Translation>
         </Body>
 
         <Joint name="q5Man" type="hinge" enable="False">
-        <Body>SaggitalRightAnkle</Body>
+        <Body>SagittalRightAnkle</Body>
         <Body>RightLegTCP</Body>
         <limitsdeg>0 0</limitsdeg>
         </Joint>
