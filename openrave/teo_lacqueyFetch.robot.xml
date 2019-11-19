@@ -3,20 +3,6 @@
     <robot file="teo/teo.robot.xml">
     </robot>
 
-    <robot prefix="rightLacqueyFetch/" file="lacqueyFetch/lacqueyFetch.robot.xml">
-    </robot>
-
-    <kinbody>
-        <body name="rightLacqueyFetch/FrontalWrist">
-                <offsetfrom>RightArmTCP</offsetfrom>
-                <translation>0 0 0.2</translation>
-        </body>
-        <joint name="TeoToRightLacqueyFetch" type="hinge" enable="false">
-            <body>RightArmTCP</body>
-            <body>rightLacqueyFetch/FrontalWrist</body>
-            <limits>0 0</limits>
-        </joint>
-    </kinbody>
 
     <robot prefix="leftLacqueyFetch/" file="lacqueyFetch/lacqueyFetch.robot.xml">
     </robot>
@@ -29,6 +15,22 @@
         <joint name="TeoToLeftLacqueyFetch" type="hinge" enable="false">
             <body>LeftArmTCP</body>
             <body>leftLacqueyFetch/FrontalWrist</body>
+            <limits>0 0</limits>
+        </joint>
+    </kinbody>
+
+
+    <robot prefix="rightLacqueyFetch/" file="lacqueyFetch/lacqueyFetch.robot.xml">
+    </robot>
+
+    <kinbody>
+        <body name="rightLacqueyFetch/FrontalWrist">
+                <offsetfrom>RightArmTCP</offsetfrom>
+                <translation>0 0 0.2</translation>
+        </body>
+        <joint name="TeoToRightLacqueyFetch" type="hinge" enable="false">
+            <body>RightArmTCP</body>
+            <body>rightLacqueyFetch/FrontalWrist</body>
             <limits>0 0</limits>
         </joint>
     </kinbody>
