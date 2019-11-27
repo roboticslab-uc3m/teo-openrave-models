@@ -28,7 +28,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftthumbAbductorJoint" type="hinge">
+	    <Joint circular="false" name="leftthumbAbductor" type="hinge">
             <Body>FrontalLeftWrist</Body>
             <Body>leftthumbAbductor</Body>
             <offsetfrom>leftthumbAbductor</offsetfrom>
@@ -57,7 +57,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftThumbProximalJoint" type="hinge">
+	    <Joint circular="false" name="leftThumbProximal" type="hinge">
             <Body>leftthumbAbductor</Body>
             <Body>leftThumbProximal</Body>
             <offsetfrom>leftThumbProximal</offsetfrom>
@@ -83,7 +83,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftThumbDistalJoint" type="hinge">
+	    <Joint circular="false" name="leftThumbDistal" type="hinge">
             <Body>leftThumbProximal</Body>
             <Body>leftThumbDistal</Body>
             <offsetfrom>leftThumbDistal</offsetfrom>
@@ -111,7 +111,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftPinkyFingerProximalJoint" type="hinge">
+	    <Joint circular="false" name="leftPinkyFingerProximal" type="hinge">
             <Body>FrontalLeftWrist</Body>
             <Body>leftPinkyFingerProximal</Body>
             <offsetfrom>leftPinkyFingerProximal</offsetfrom>
@@ -136,7 +136,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftPinkyFingerMiddleJoint" type="hinge">
+	    <Joint circular="false" name="leftPinkyFingerMiddle" type="hinge">
             <Body>leftPinkyFingerProximal</Body>
             <Body>leftPinkyFingerMiddle</Body>
             <offsetfrom>leftPinkyFingerMiddle</offsetfrom>
@@ -161,7 +161,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftPinkyFingerDistalJoint" type="hinge">
+	    <Joint circular="false" name="leftPinkyFingerDistal" type="hinge">
             <Body>leftPinkyFingerMiddle</Body>
             <Body>leftPinkyFingerDistal</Body>
             <offsetfrom>leftPinkyFingerDistal</offsetfrom>
@@ -189,7 +189,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftRingFingerProximalJoint" type="hinge">
+	    <Joint circular="false" name="leftRingFingerProximal" type="hinge">
             <Body>FrontalLeftWrist</Body>
             <Body>leftRingFingerProximal</Body>
             <offsetfrom>leftRingFingerProximal</offsetfrom>
@@ -214,7 +214,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftRingFingerMiddleJoint" type="hinge">
+	    <Joint circular="false" name="leftRingFingerMiddle" type="hinge">
             <Body>leftRingFingerProximal</Body>
             <Body>leftRingFingerMiddle</Body>
             <offsetfrom>leftRingFingerMiddle</offsetfrom>
@@ -239,7 +239,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftRingFingerDistalJoint" type="hinge">
+	    <Joint circular="false" name="leftRingFingerDistal" type="hinge">
             <Body>leftRingFingerMiddle</Body>
             <Body>leftRingFingerDistal</Body>
             <offsetfrom>leftRingFingerDistal</offsetfrom>
@@ -267,7 +267,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftMiddleFingerProximalJoint" type="hinge">
+	    <Joint circular="false" name="leftMiddleFingerProximal" type="hinge">
             <Body>FrontalLeftWrist</Body>
             <Body>leftMiddleFingerProximal</Body>
             <offsetfrom>leftMiddleFingerProximal</offsetfrom>
@@ -292,7 +292,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftMiddleFingerMiddleJoint" type="hinge">
+	    <Joint circular="false" name="leftMiddleFingerMiddle" type="hinge">
             <Body>leftMiddleFingerProximal</Body>
             <Body>leftMiddleFingerMiddle</Body>
             <offsetfrom>leftMiddleFingerMiddle</offsetfrom>
@@ -317,7 +317,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftMiddleFingerDistalJoint" type="hinge">
+	    <Joint circular="false" name="leftMiddleFingerDistal" type="hinge">
             <Body>leftMiddleFingerMiddle</Body>
             <Body>leftMiddleFingerDistal</Body>
             <offsetfrom>leftMiddleFingerDistal</offsetfrom>
@@ -345,7 +345,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftIndexFingerProximalJoint" type="hinge">
+	    <Joint circular="false" name="leftIndexFingerProximal" type="hinge">
             <Body>FrontalLeftWrist</Body>
             <Body>leftIndexFingerProximal</Body>
             <offsetfrom>leftIndexFingerProximal</offsetfrom>
@@ -370,7 +370,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftIndexFingerMiddleJoint" type="hinge">
+	    <Joint circular="false" name="leftIndexFingerMiddle" type="hinge">
             <Body>leftIndexFingerProximal</Body>
             <Body>leftIndexFingerMiddle</Body>
             <offsetfrom>leftIndexFingerMiddle</offsetfrom>
@@ -395,7 +395,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="leftIndexFingerDistalJoint" type="hinge">
+	    <Joint circular="false" name="leftIndexFingerDistal" type="hinge">
             <Body>leftIndexFingerMiddle</Body>
             <Body>leftIndexFingerDistal</Body>
             <offsetfrom>leftIndexFingerDistal</offsetfrom>

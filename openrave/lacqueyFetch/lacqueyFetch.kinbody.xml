@@ -27,7 +27,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="ThumbProximalJoint" type="hinge">
+	    <Joint circular="false" name="ThumbProximal" type="hinge">
             <Body>FrontalWrist</Body>
             <Body>ThumbProximal</Body>
             <offsetfrom>ThumbProximal</offsetfrom>
@@ -54,7 +54,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="ThumbDistalJoint" type="hinge">
+	    <Joint circular="false" name="ThumbDistal" type="hinge">
             <Body>ThumbProximal</Body>
             <Body>ThumbDistal</Body>
             <offsetfrom>ThumbDistal</offsetfrom>
@@ -80,7 +80,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="ExternalFingerProximalJoint" type="hinge">
+	    <Joint circular="false" name="ExternalFingerProximal" type="hinge">
             <Body>FrontalWrist</Body>
             <Body>ExternalFingerProximal</Body>
             <offsetfrom>ExternalFingerProximal</offsetfrom>
@@ -105,7 +105,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="ExternalFingerDistalJoint" type="hinge">
+	    <Joint circular="false" name="ExternalFingerDistal" type="hinge">
             <Body>ExternalFingerProximal</Body>
             <Body>ExternalFingerDistal</Body>
             <offsetfrom>ExternalFingerDistal</offsetfrom>
@@ -131,7 +131,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="InternalFingerProximalJoint" type="hinge">
+	    <Joint circular="false" name="InternalFingerProximal" type="hinge">
             <Body>FrontalWrist</Body>
             <Body>InternalFingerProximal</Body>
             <offsetfrom>InternalFingerProximal</offsetfrom>
@@ -156,7 +156,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="InternalFingerDistalJoint" type="hinge">
+	    <Joint circular="false" name="InternalFingerDistal" type="hinge">
             <Body>InternalFingerProximal</Body>
             <Body>InternalFingerDistal</Body>
             <offsetfrom>InternalFingerDistal</offsetfrom>
