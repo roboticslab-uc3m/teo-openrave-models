@@ -13,7 +13,7 @@ try:
 
     env = Environment()
     #env.SetViewer('qtcoin')  # Viewer not really required...
-    env.Load('/usr/local/share/teo-openrave-models/contexts/openrave/teo/teo.robot.xml')
+    env.Load('../../openrave/teo/teo.robot.xml')
 
     robot = env.GetRobots()[0]
 

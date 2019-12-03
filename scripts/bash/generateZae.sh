@@ -10,4 +10,4 @@ if [ $# -eq 1 ]; then
     fileNameNoExtension="teo_$1"
 fi
 
-openrave -save $fileNameNoExtension.robot.zae /usr/local/share/teo-openrave-models/contexts/openrave/$fileNameNoExtension.robot.xml
+openrave -save $fileNameNoExtension.robot.zae ../../openrave/$fileNameNoExtension.robot.xml
