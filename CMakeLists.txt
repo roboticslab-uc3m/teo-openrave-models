@@ -16,7 +16,7 @@ yarp_configure_external_installation(teo-openrave-models)
 
 # Configure install rule, copy models to the build directory.
 yarp_install(DIRECTORY openrave
-             DESTINATION ${TEO-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR})
+             DESTINATION ${TEO-OPENRAVE-MODELS_DATA_INSTALL_DIR})
 
 # Store this package in the user registry.
 export(PACKAGE ${PROJECT_NAME})
