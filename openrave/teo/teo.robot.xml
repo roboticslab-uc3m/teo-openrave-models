@@ -74,4 +74,20 @@
         <base>RootWaist</base>           <!-- base link-->
     </Manipulator>
 
+    <!-- Sensors -->
+
+    <AttachedSensor name="xtion">
+        <link>FrontalNeck</link>
+        <translation>0.105 0 0.1</translation>
+        <rotationaxis>0 1 0 90</rotationaxis>
+        <sensor type="BaseFlashLidar3D">
+            <maxrange>5</maxrange>
+            <time_scan>0.2</time_scan>
+            <KK>32 24 32 24</KK>
+            <width>64</width>
+            <height>48</height>
+            <color>1 1 0</color>
+        </sensor>
+    </AttachedSensor>
+
 </Robot>
