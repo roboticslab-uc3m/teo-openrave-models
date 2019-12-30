@@ -90,4 +90,18 @@
         </sensor>
     </AttachedSensor>
 
+    <AttachedSensor name="rightWristFT">
+        <link>FrontalRightWrist</link>
+        <sensor type="forcesensor">
+            <joint>FrontalRightWrist</joint>
+        </sensor>
+    </AttachedSensor>
+
+    <AttachedSensor name="leftWristFT">
+        <link>FrontalLeftWrist</link>
+        <sensor type="forcesensor">
+            <joint>FrontalLeftWrist</joint>
+        </sensor>
+    </AttachedSensor>
+
 </Robot>
