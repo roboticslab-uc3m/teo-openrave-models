@@ -49,19 +49,9 @@
         <base>FrontalWaist</base>           <!-- base link-->
     </Manipulator>
 
-    <Manipulator name="trunkAndRightArm">
-        <effector>RightArmTCP</effector>   <!-- last link where end effector is attached-->
-        <base>RootWaist</base>           <!-- base link-->
-    </Manipulator>
-
     <Manipulator name="leftArm">
         <effector>LeftArmTCP</effector>   <!-- last link where end effector is attached-->
         <base>FrontalWaist</base>           <!-- base link-->
-    </Manipulator>
-
-    <Manipulator name="trunkAndLeftArm">
-        <effector>LeftArmTCP</effector>   <!-- last link where end effector is attached-->
-        <base>RootWaist</base>           <!-- base link-->
     </Manipulator>
 
     <Manipulator name="rightLeg">
