@@ -10,7 +10,7 @@ try:
 
     env = Environment()
     env.SetViewer('qtcoin')
-    env.Load('../../openrave/teo/teo.robot.xml')
+    env.Load('../../openrave/teo_lacqueyFetch.robot.xml') # ../../openrave/teo/teo.robot.xml
 
     # Convex Decomposition
     teo_robot = env.GetRobots()[0]
