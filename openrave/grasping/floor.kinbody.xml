@@ -1,0 +1,11 @@
+<!-- floor.kinbody.xml -->
+
+<KinBody name="floor">
+    <Body type="static">
+        <Geom type="box">
+            <Extents>1 1 0.02</Extents>
+            <diffuseColor>0.87 0.72 0.52</diffuseColor>  <!-- brown -->
+        </Geom>
+    </Body>
+</KinBody>
+
