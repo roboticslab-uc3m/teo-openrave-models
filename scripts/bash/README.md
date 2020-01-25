@@ -25,5 +25,5 @@ Generated databases shared folder: [Google Drive](https://drive.google.com/open?
 ## generateInversereachability.sh
 `time ./generateInversereachability.sh` (Ubuntu 16.04, OpenRAVE v0.9.0, nproc=16):
 - Time: `real 126m4.553s; user 239m34.739s; sys 0m28.291s`
-- Output:
-    - invreachability.fb408525a1a1361c10383726ee14d1f9.pp
+- Output: [trunkAndRightArm/](https://drive.google.com/open?id=1t3mljSRmtkJwPRcc_qseFWLjl0yQ7GVF)
+    - [invreachability.fb408525a1a1361c10383726ee14d1f9.pp](https://drive.google.com/open?id=1pHverPEnYkjIBNDK4KiGHFdYjF_UKelP) 65818284 (63M)
