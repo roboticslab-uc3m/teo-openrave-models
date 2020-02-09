@@ -24,7 +24,7 @@
             <weight>1.0</weight>
             <limitsdeg>-98.1 106.0</limitsdeg>
             <axis>0 1 0</axis>
-            <maxveldeg>30</maxveldeg>
+            <maxveldeg>10</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -48,7 +48,7 @@
             <weight>1.0</weight>
             <limitsdeg>-75.5 22.4</limitsdeg>
             <axis>1 0 0</axis>
-            <maxveldeg>30</maxveldeg>
+            <maxveldeg>10</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -72,7 +72,7 @@
             <weight>1.0</weight>
             <limitsdeg>-80.1 57.0</limitsdeg> 
             <axis>0 0 1</axis>
-            <maxveldeg>30</maxveldeg>
+            <maxveldeg>10</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -96,7 +96,7 @@
             <weight>1.0</weight>
             <limitsdeg>-99.6 98.4</limitsdeg>
             <axis>0 1 0</axis>
-            <maxveldeg>30</maxveldeg>
+            <maxveldeg>10</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -119,7 +119,7 @@
             <weight>1.0</weight>
             <limitsdeg>-80.4 99.6</limitsdeg> 
             <axis>0 0 1</axis>
-            <maxveldeg>30</maxveldeg>
+            <maxveldeg>10</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -137,7 +137,7 @@
 		<weight>1.0</weight>
 		<limitsdeg>-115.1 44.7</limitsdeg> 
 		<axis>0 1 0</axis> 
-		<maxveldeg>30</maxveldeg>
+		<maxveldeg>10</maxveldeg>
 		<resolution>1</resolution>
 	  </Joint>
 
