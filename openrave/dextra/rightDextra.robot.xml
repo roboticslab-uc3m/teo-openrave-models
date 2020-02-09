@@ -2,32 +2,32 @@
 
     <KinBody file="rightDextra.kinbody.xml" />
 
-    <Manipulator name="thumb">
+    <manipulator name="thumb">
         <effector>RightThumbDistal</effector>   <!-- last link where end effector is attached-->
         <base>FrontalRightWrist</base>           <!-- base link-->
-    </Manipulator>
+    </manipulator>
 
-    <Manipulator name="index">
+    <manipulator name="index">
         <effector>RightIndexFingerDistal</effector>   <!-- last link where end effector is attached-->
         <base>FrontalRightWrist</base>           <!-- base link-->
-    </Manipulator>
+    </manipulator>
 
 
-    <Manipulator name="middle">
+    <manipulator name="middle">
         <effector>RightMiddleFingerDistal</effector>   <!-- last link where end effector is attached-->
         <base>FrontalRightWrist</base>           <!-- base link-->
-    </Manipulator>
+    </manipulator>
 
 
-    <Manipulator name="ring">
+    <manipulator name="ring">
         <effector>RightRingFingerDistal</effector>   <!-- last link where end effector is attached-->
         <base>FrontalRightWrist</base>           <!-- base link-->
-    </Manipulator>
+    </manipulator>
 
 
-    <Manipulator name="pinky">
+    <manipulator name="pinky">
         <effector>RightPinkyFingerDistal</effector>   <!-- last link where end effector is attached-->
         <base>FrontalRightWrist</base>           <!-- base link-->
-    </Manipulator>
+    </manipulator>
 
 </Robot>

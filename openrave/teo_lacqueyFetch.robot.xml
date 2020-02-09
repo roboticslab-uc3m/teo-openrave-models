@@ -19,14 +19,14 @@
         </joint>
     </kinbody>
 
-    <Manipulator name="trunkAndLeftArm">
+    <manipulator name="trunkAndLeftArm">
         <effector>LeftArmTCP</effector>   <!-- last link where end effector is attached-->
         <base>RootWaist</base>           <!-- base link-->
         <joints>leftLacqueyFetch/ThumbProximal leftLacqueyFetch/ThumbDistal leftLacqueyFetch/ExternalFingerProximal leftLacqueyFetch/ExternalFingerDistal leftLacqueyFetch/InternalFingerProximal leftLacqueyFetch/InternalFingerDistal</joints>
-  <direction>0 0 -1</direction>
-  <Translation>0 0 -0.2</Translation>
-  <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
-    </Manipulator>
+        <direction>0 0 -1</direction>
+        <Translation>0 0 -0.2</Translation>
+        <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
+    </manipulator>
 
     <robot prefix="rightLacqueyFetch/" file="lacqueyFetch/lacqueyFetch.robot.xml">
     </robot>
@@ -43,13 +43,13 @@
         </joint>
     </kinbody>
 
-    <Manipulator name="trunkAndRightArm">
+    <manipulator name="trunkAndRightArm">
         <effector>RightArmTCP</effector>   <!-- last link where end effector is attached-->
         <base>RootWaist</base>           <!-- base link-->
         <joints>rightLacqueyFetch/ThumbProximal rightLacqueyFetch/ThumbDistal rightLacqueyFetch/ExternalFingerProximal rightLacqueyFetch/ExternalFingerDistal rightLacqueyFetch/InternalFingerProximal rightLacqueyFetch/InternalFingerDistal</joints>
         <direction>0 0 -1</direction>
         <Translation>0 0 -0.2</Translation>
         <closingdirection>-30 -50 -30 -50 -30 -50</closingdirection>
-    </Manipulator>
+    </manipulator>
 
 </robot>
