@@ -2,48 +2,32 @@
 # Authors: Raul Fernandez-Fernandez, Juan G. Victores
 # CopyPolicy: Released under the terms of the GNU GPL v2.0.
 
-cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 
 # Define a project.
 project(TEO_OPENRAVE_MODELS LANGUAGES NONE)
 
 # Find dependencies.
-find_package(YCM 0.8 REQUIRED)
-
-# https://github.com/roboticslab-uc3m/questions-and-answers/issues/65
-find_package(YARP 3.0 QUIET)
-if(NOT YARP_FOUND)
-    find_package(YARP 2.3.70 REQUIRED)
-endif()
+find_package(YCM 0.11 REQUIRED)
+find_package(YARP 3.2 REQUIRED)
 
 # Set some useful variables - paths relative to the installation prefix.
 yarp_configure_external_installation(teo-openrave-models)
 
 # Configure install rule, copy models to the build directory.
 yarp_install(DIRECTORY openrave
-             DESTINATION ${TEO-OPENRAVE-MODELS_CONTEXTS_INSTALL_DIR})
+             DESTINATION ${TEO-OPENRAVE-MODELS_DATA_INSTALL_DIR})
 
-# Store this package in the user registry.
-export(PACKAGE ${PROJECT_NAME})
+# Store the package in the user registry.
+set(CMAKE_EXPORT_PACKAGE_REGISTRY ON)
 
-# Define CMAKE_INSTALL_<dir> and CMAKE_INSTALL_FULL_<dir> variables.
-include(GNUInstallDirs)
+# Create and install config files.
+include(InstallBasicPackageFiles)
 
-# Set installation path for CMake files.
-if(WIN32)
-    set(${PROJECT_NAME}_CMAKE_DESTINATION "CMake")
-else()
-    set(${PROJECT_NAME}_CMAKE_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}")
-endif()
-
-# Create dummy CMake configuration export file.
-file(WRITE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
-     "# Dummy CMake configuration export file.")
-
-# Install CMake configuration file.
-install(FILES ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
-        DESTINATION ${${PROJECT_NAME}_CMAKE_DESTINATION})
+install_basic_package_files(TEO_OPENRAVE_MODELS
+                            VERSION 0.1.0
+                            COMPATIBILITY AnyNewerVersion
+                            NO_EXPORT)
 
 # Add uninstall rule.
 include(AddUninstallTarget)
-

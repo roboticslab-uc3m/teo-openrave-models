@@ -1,6 +1,4 @@
-[![teo-openrave-models Homepage](https://img.shields.io/badge/teo-openrave-models-orange.svg)](http://robots.uc3m.es/dox-teo-openrave-models) [![Latest Release](https://img.shields.io/github/tag/roboticslab-uc3m/teo-openrave-models.svg?label=Latest Release)](https://github.com/roboticslab-uc3m/teo-openrave-models/tags)
-
-TEO OpenRAVE models.
+3D OpenRAVE models for TEO robot. If you are looking for the source code of the robot itself, visit the [teo-main](https://github.com/roboticslab-uc3m/teo-main) repository.
 
 ## Installation
 
@@ -22,9 +20,5 @@ Installation instructions for installing from source can be found [here](doc/teo
 5. Create a new Pull Request
 
 ## Status
-
-[![Build Status (Linux/OSX)](https://img.shields.io/travis/roboticslab-uc3m/teo-openrave-models/master.svg?label=Build Status (Linux/OSX))](https://travis-ci.org/roboticslab-uc3m/teo-openrave-models)
-
-[![Coverage Status](https://coveralls.io/repos/roboticslab-uc3m/teo-openrave-models/badge.svg)](https://coveralls.io/r/roboticslab-uc3m/teo-openrave-models)
 
 [![Issues](https://img.shields.io/github/issues/roboticslab-uc3m/teo-openrave-models.svg?label=Issues)](https://github.com/roboticslab-uc3m/teo-openrave-models/issues)

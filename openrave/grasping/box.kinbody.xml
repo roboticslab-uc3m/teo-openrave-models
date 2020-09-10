@@ -1,0 +1,9 @@
+<!-- box.kinbody.xml -->
+
+<KinBody name="box">
+    <Body type="dynamic">
+        <Geom type="box">
+            <Extents>0.03 0.05 0.05</Extents>
+        </Geom>
+    </Body>
+</KinBody>

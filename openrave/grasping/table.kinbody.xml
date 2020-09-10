@@ -1,0 +1,10 @@
+<!-- table.kinbody.xml -->
+
+<KinBody name="table">
+    <Body type="static">
+        <Geom type="box">
+            <Extents>0.3 0.6 0.45</Extents> <!-- 60 x 120 x 90 (cm) -->
+            <diffuseColor>0.5 0.5 0.52</diffuseColor>
+        </Geom>
+    </Body>
+</KinBody>

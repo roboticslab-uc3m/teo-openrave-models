@@ -1,0 +1,20 @@
+<Robot name="lacqueyFetch">
+
+    <KinBody file="lacqueyFetch.kinbody.xml" />
+
+    <manipulator name="thumb">
+        <effector>ThumbDistal</effector>   <!-- last link where end effector is attached-->
+        <base>FrontalWrist</base>           <!-- base link-->
+    </manipulator>
+
+    <manipulator name="externalFinger">
+        <effector>ExternalFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>FrontalWrist</base>           <!-- base link-->
+    </manipulator>
+
+    <manipulator name="internalFinger">
+        <effector>InternalFingerDistal</effector>   <!-- last link where end effector is attached-->
+        <base>FrontalWrist</base>           <!-- base link-->
+    </manipulator>
+
+</Robot>

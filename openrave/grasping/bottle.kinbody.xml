@@ -1,0 +1,12 @@
+<!-- bottle.kinbody.xml -->
+
+<KinBody name="bottle">
+    <Body type="dynamic">
+        <Geom type="cylinder">
+            <rotationaxis>1 0 0 90</rotationaxis>
+            <radius>0.035</radius>    <!-- radius 3.5cm -->
+            <height>0.21</height>     <!-- height 21cm  -->
+            <diffuseColor>1 0 0</diffuseColor>
+        </Geom>
+    </Body>
+</KinBody>
