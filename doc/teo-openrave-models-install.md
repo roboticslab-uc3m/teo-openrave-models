@@ -16,7 +16,7 @@ mkdir -p repos; cd repos  # make $HOME/repos if it does not exist; then, enter i
 git clone https://github.com/roboticslab-uc3m/teo-openrave-models.git  # download teo-openrave-models software from the repository
 cd teo-openrave-models; mkdir build; cd build
 cmake ..
-make -j3; sudo make install; cd  # go home
+make -j$(nproc); sudo make install; cd  # go home
 ```
 
 For CMake `find_package(TEO_OPENRAVE_MODELS REQUIRED)`, you may also be interested in adding the following to your `~/.bashrc` or `~/.profile`:
