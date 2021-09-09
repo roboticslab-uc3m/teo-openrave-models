@@ -44,7 +44,7 @@
             <Body>FrontalWaist</Body>
             <offsetfrom>AxialWaist</offsetfrom>
             <weight>1.0</weight>
-            <limitsdeg>-90.4 10.1</limitsdeg>
+            <limitsdeg>-10.1 90.4</limitsdeg>
             <axis>0 1 0</axis>
             <maxveldeg>10</maxveldeg>
             <resolution>1</resolution>
