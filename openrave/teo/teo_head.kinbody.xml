@@ -23,7 +23,7 @@
             <weight>1.0</weight>
             <limitsdeg>-70 70</limitsdeg>
             <axis>0 0 1</axis>
-            <maxveldeg>10</maxveldeg>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
 
@@ -47,7 +47,7 @@
             <weight>1.0</weight>
             <limitsdeg>-29 8.4</limitsdeg>
             <axis>0 1 0</axis>
-            <maxveldeg>10</maxveldeg>
+            <maxveldeg>30</maxveldeg>
             <resolution>1</resolution>
             </Joint>
             <!---->
