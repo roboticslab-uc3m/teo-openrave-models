@@ -16,7 +16,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="AxialWaist" type="hinge">
+	    <Joint circular="false" name="AxialTrunk" type="hinge">
             <Body>RootWaist</Body>
             <Body>AxialWaist</Body>
             <offsetfrom>AxialWaist</offsetfrom>
@@ -39,7 +39,7 @@
             </Mass>
             </Body>
 
-	    <Joint circular="false" name="FrontalWaist" type="hinge">
+	    <Joint circular="false" name="FrontalTrunk" type="hinge">
             <Body>AxialWaist</Body>
             <Body>FrontalWaist</Body>
             <offsetfrom>AxialWaist</offsetfrom>
