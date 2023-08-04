@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
-# Copyright: (C) 2018 Universidad Carlos III de Madrid
-# Author: Raul de Santos Rico
-# CopyPolicy: Released under the terms of the LGPLv2.1 or later, see license/LGPL.TXT
-
 from openravepy import *
 from openravepy.misc import *
 

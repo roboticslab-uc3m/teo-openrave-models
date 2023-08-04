@@ -1,8 +1,4 @@
-# Copyright: Universidad Carlos III de Madrid (C) 2016;
-# Authors: Raul Fernandez-Fernandez, Juan G. Victores
-# CopyPolicy: Released under the terms of the GNU GPL v2.0.
-
-cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.12)
 
 # Define a project.
 project(TEO_OPENRAVE_MODELS LANGUAGES NONE)
