@@ -1,0 +1,51 @@
+name: Docker
+
+on:
+  workflow_dispatch:
+    inputs:
+      yarp_tag:
+        description: YARP tag
+        required: true
+        default: master
+        type: string
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{github.repository}}
+
+jobs:
+  docker:
+    name: 'build (YARP: ${{inputs.yarp_tag}})'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+
+    steps:
+    - name: Check out main project
+      uses: actions/checkout@v4
+
+    - name: Log in to the Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ${{env.REGISTRY}}
+        username: ${{github.actor}}
+        password: ${{secrets.GITHUB_TOKEN}}
+
+    - name: Extract metadata (tags, labels) for Docker
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: ${{env.REGISTRY}}/${{env.IMAGE_NAME}}
+
+    - name: Build and push
+      uses: docker/build-push-action@v6
+      with:
+        push: true
+        context: docker
+        tags: ${{env.REGISTRY}}/${{env.IMAGE_NAME}}:latest
+        labels: ${{steps.meta.outputs.labels}}
+        build-args: |
+          YARP_TAG=${{inputs.yarp_tag}}
