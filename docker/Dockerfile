@@ -16,7 +16,6 @@ RUN apt-get update && \
         libboost-system-dev \
         libboost-thread-dev \
         libboost-iostreams-dev \
-        libboost-python-dev \
         libxml2-dev \
         liblapack-dev \
         libsoqt520-dev \
