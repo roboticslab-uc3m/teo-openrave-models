@@ -34,7 +34,7 @@ Group {
                                       children 
                                         Group {
                                           children [ 
-                                            DEF o0 Group {
+                                            Group {
                                               children 
                                                 Shape {
                                                   appearance 
@@ -73,7 +73,7 @@ Group {
 
                                             },
                                               
-                                            DEF o2 Group {
+                                            Group {
                                               children 
                                                 Shape {
                                                   appearance 
@@ -564,7 +564,7 @@ Group {
 
                                             },
                                               
-                                            DEF o3 Group {
+                                            Group {
                                               children 
                                                 Shape {
                                                   appearance 
