@@ -23,7 +23,7 @@ docker run --rm --privileged \
            -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
            -v $HOME/.config/yarp:/root/.config/yarp:ro \
            -e DISPLAY \
-           ghcr.io/roboticslab-uc3m/teo-openrave-models:latest openrave/teo_lacqueyFetch.robot.xml
+           ghcr.io/roboticslab-uc3m/teo-openrave-models:latest teo_lacqueyFetch.robot.xml
 ```
 
 Alternatively, appending `-v $XAUTHORITY:/root/.Xauthority:ro` to the list of options would avoid the need of `sudo xhost +`. In .bashrc, add the following line:

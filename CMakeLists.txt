@@ -11,7 +11,7 @@ find_package(YARP 3.7 REQUIRED)
 yarp_configure_external_installation(teo-openrave-models)
 
 # Configure install rule, copy models to the build directory.
-yarp_install(DIRECTORY openrave
+yarp_install(DIRECTORY openrave/
              DESTINATION ${TEO-OPENRAVE-MODELS_DATA_INSTALL_DIR})
 
 # Store the package in the user registry.
@@ -20,7 +20,7 @@ set(CMAKE_EXPORT_PACKAGE_REGISTRY ON)
 # Create and install config files.
 include(InstallBasicPackageFiles)
 
-install_basic_package_files(TEO_OPENRAVE_MODELS
+install_basic_package_files(${PROJECT_NAME}
                             VERSION 0.1.0
                             COMPATIBILITY AnyNewerVersion
                             NO_EXPORT)
